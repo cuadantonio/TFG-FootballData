@@ -18,7 +18,7 @@ json_Response = parse_json['players']
 for i in range(len(json_Response)):
     playeraux = json_Response[i]
     name = playeraux['nickname']
-    price = playeraux['marketValue']
-    points = playeraux['points']
+    price = str(playeraux['marketValue'])
+    points = str(playeraux['points'])
     player = {"name": name, "price": price, "points": points, "team": team}
     collection.insert_one(player)
