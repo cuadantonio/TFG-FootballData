@@ -7,9 +7,11 @@ comunio = db["ComunioData"]
 futmondo = db["FutmondoData"]
 misterfantasy = db["MisterFantasyData"]
 laligafantasy = db["LaLigaFantasyData"]
+playersrealdata = db["PlayersRealData"]
 
 biwenger.delete_many({})
 comunio.delete_many({})
 futmondo.delete_many({})
 misterfantasy.delete_many({})
 laligafantasy.delete_many({})
+playersrealdata.delete_many({})
