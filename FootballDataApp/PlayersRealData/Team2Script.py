@@ -46,9 +46,6 @@ for i in pages:
             name = nameAux2
         else:
             name = str(nameAux2)[nameAux2pos1+2:len(nameAux2)]
-        nameAux2pos2 = nameAux2.find(" ")
-        if nameAux2pos2 != -1:
-            names = nameAux2.split(" ")
         firstname = str(firstnameAux.translate(trans)).replace("\'","")
         lastname = str(lastnameAux.translate(trans)).replace("\'","")
         fullname = str(fullnameAux.translate(trans)).replace("\'","")
@@ -156,6 +153,20 @@ for i in pages:
                   "redCards": redCards, "penaltiesWon": penaltiesWon, "penaltiesSaved": penaltiesSaved,
                   "penaltiesMissed": penaltiesMissed, "penaltiesScored": penaltiesScored,
                   "penaltiesCommited": penaltiesCommited}
+        query5 = collection.find_one(
+            {"name": {"$regex": re.compile(fullname, re.IGNORECASE)}, "team": team, "teamId": teamId})
+        if query5 != None:
+            query5Filter = {"name": query5["name"]}
+            newvalues5 = {"$set": playerUpdate}
+            collection.update_one(query5Filter, newvalues5)
+            continue
+        query6 = collection.find_one(
+            {"nickname": {"$regex": re.compile(fullname, re.IGNORECASE)}, "team": team, "teamId": teamId})
+        if query6 != None:
+            query6Filter = {"name": query6["name"]}
+            newvalues6 = {"$set": playerUpdate}
+            collection.update_one(query6Filter, newvalues6)
+            continue
         query1 = collection.find_one({"name":{"$regex":re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId})
         if query1 != None:
             query1Filter = {"name":query1["name"]}
@@ -179,16 +190,4 @@ for i in pages:
             query4Filter = {"name":query4["name"]}
             newvalues4 = {"$set": playerUpdate}
             collection.update_one(query4Filter, newvalues4)
-            continue
-        query5 = collection.find_one({"name":{"$regex":re.compile(fullname, re.IGNORECASE)},"team":team,"teamId":teamId})
-        if query5 != None:
-            query5Filter = {"name":query5["name"]}
-            newvalues5 = {"$set": playerUpdate}
-            collection.update_one(query5Filter, newvalues5)
-            continue
-        query6 = collection.find_one({"nickname":{"$regex":re.compile(fullname, re.IGNORECASE)},"team":team,"teamId":teamId})
-        if query6 != None:
-            query6Filter = {"name":query6["name"]}
-            newvalues6 = {"$set": playerUpdate}
-            collection.update_one(query6Filter, newvalues6)
             continue
