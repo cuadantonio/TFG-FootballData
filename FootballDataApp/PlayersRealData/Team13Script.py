@@ -6,9 +6,9 @@ import re
 a, b = 'áãàéíóúüćşÁÉÍÓÚÜ-', 'aaaeiouucsAEIOUU '
 trans = str.maketrans(a, b)
 
-teamId = 1
-team = "Alaves"
-id = 542
+teamId = 13
+team = "Mallorca"
+id = 798
 url = "https://api-football-v1.p.rapidapi.com/v3/players"
 
 client = pymongo.MongoClient(
@@ -23,7 +23,7 @@ for i in pages:
 
     headers = {
         'x-rapidapi-host': "api-football-v1.p.rapidapi.com",
-        'x-rapidapi-key': "107c6e209amsh4c71238714f1793p1c06ecjsn222ae5091f9b"
+        'x-rapidapi-key': "5755d3dea6msh4c6cd3062d8ec44p149f7ajsna0eb540cba0b"
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
