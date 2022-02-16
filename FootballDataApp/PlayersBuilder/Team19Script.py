@@ -1,6 +1,7 @@
 import pymongo
 import requests
 from bs4 import BeautifulSoup
+import re
 
 a, b = 'áãàéíóúüćşÁÉÍÓÚÜ-', 'aaaeiouucsAEIOUU '
 trans = str.maketrans(a, b)
@@ -8,6 +9,8 @@ trans = str.maketrans(a, b)
 teamId = 19
 team = "Valencia"
 url = "https://www.lapreferente.com/E6870C13125-1/valencia-cf"
+prefix = "https://www.lapreferente.com/"
+urls = []
 
 client = pymongo.MongoClient(
     "mongodb+srv://root:eODi!SbR5Xqo@cluster0.e9hmo.mongodb.net/footballdata?retryWrites=true&w=majority")
@@ -28,5 +31,26 @@ for team_player in team_players:
     name = nameAux3.translate(trans)
     nicknameAux = nameAux2[0].text
     nickname = nicknameAux.translate(trans)
+    suffix = nameAux1["href"]
+    playerUrl = prefix+suffix
+    urls.append(playerUrl)
     player = {"team":team, "teamId": teamId, "number": number, "name": name, "nickname": nickname}
     collection.insert_one(player)
+
+for playerUrl in urls:
+    page2 = requests.get(playerUrl)
+    soup2 = BeautifulSoup(page2.content, "html.parser")
+    playerNameAux = soup2.find("span",{"style":"font-style:italic;position:absolute;width:100%"}).text
+    playerName = playerNameAux.translate(trans)
+    dateAux = soup2.find_all("font")
+    pos = -1
+    for i in range(len(dateAux)):
+        if dateAux[i].text == "FECHA DE NACIMIENTO: ":
+            pos = i
+            break
+    dateAux2 = dateAux[pos+1].text
+    query = collection.find_one({"name": {"$regex": re.compile(playerName, re.IGNORECASE)}, "team": team, "teamId": teamId})
+    queryFilter = {"name": playerName}
+    playerUpdate = {"date":dateAux2}
+    newValues = {"$set": playerUpdate}
+    collection.update_one(queryFilter, newValues)

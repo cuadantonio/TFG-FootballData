@@ -35,20 +35,23 @@ for i in pages:
 
     for j in range(len(jsonResponse)):
         playerId = jsonResponse[j]['player']['id']
+        dateAux1 = jsonResponse[j]['player']['birth']['date']
+        dateAux2 = dateAux1.split("-")
+        date = dateAux2[2] + "/" + dateAux2[1] + "/" + dateAux2[0]
         nameAux1 = jsonResponse[j]['player']['name']
         firstnameAux = jsonResponse[j]['player']['firstname']
         lastnameAux = jsonResponse[j]['player']['lastname']
         fullnameAux = firstnameAux + " " + lastnameAux
-        nameAux2 = str(nameAux1.translate(trans)).replace("\'","")
+        nameAux2 = str(nameAux1.translate(trans)).replace("\'", "")
         name = ""
         nameAux2pos1 = nameAux2.find(".")
         if nameAux2pos1 == -1:
             name = nameAux2
         else:
-            name = str(nameAux2)[nameAux2pos1+2:len(nameAux2)]
-        firstname = str(firstnameAux.translate(trans)).replace("\'","")
-        lastname = str(lastnameAux.translate(trans)).replace("\'","")
-        fullname = str(fullnameAux.translate(trans)).replace("\'","")
+            name = str(nameAux2)[nameAux2pos1 + 2:len(nameAux2)]
+        firstname = str(firstnameAux.translate(trans)).replace("\'", "")
+        lastname = str(lastnameAux.translate(trans)).replace("\'", "")
+        fullname = str(fullnameAux.translate(trans)).replace("\'", "")
         age = jsonResponse[j]['player']['age']
         nationality = jsonResponse[j]['player']['nationality']
         height = jsonResponse[j]['player']['height']
@@ -142,52 +145,42 @@ for i in pages:
         penaltiesSaved = statistics['penalty']['saved']
         if penaltiesSaved is None:
             penaltiesSaved = 0
-        playerUpdate = {"playerId": playerId,"firstname":firstname,"lastname":lastname, "fullname": fullname, "age": age, "nationality": nationality,
-                  "height": height, "weight": weight, "isInjured": isInjured,
-                  "photo": photo, "position": position, "rating": rating, "totalShots": totalShots, "shotsOn": shotsOn,
-                  "goals": goals, "concededGoals": concededGoals, "assists": assists, "saves": saves, "passes": passes,
-                  "keyPasses": keyPasses, "passesAccuracy": passesAccuracy, "tackles": tackles, "blocks": blocks,
-                  "interceptions": interceptions, "totalDuels": totalDuels, "duelsWon": duelsWon,
-                  "dribblesAttempts": dribblesAttempts, "dribblesSuccess": dribblesSuccess, "foulsDrawn": foulsDrawn,
-                  "foulsCommitted": foulsCommitted, "yellowCards": yellowCards, "yellowredCards": yellowredCards,
-                  "redCards": redCards, "penaltiesWon": penaltiesWon, "penaltiesSaved": penaltiesSaved,
-                  "penaltiesMissed": penaltiesMissed, "penaltiesScored": penaltiesScored,
-                  "penaltiesCommited": penaltiesCommited}
-        query5 = collection.find_one(
-            {"name": {"$regex": re.compile(fullname, re.IGNORECASE)}, "team": team, "teamId": teamId})
-        if query5 != None:
-            query5Filter = {"name": query5["name"]}
-            newvalues5 = {"$set": playerUpdate}
-            collection.update_one(query5Filter, newvalues5)
-            continue
-        query6 = collection.find_one(
-            {"nickname": {"$regex": re.compile(fullname, re.IGNORECASE)}, "team": team, "teamId": teamId})
-        if query6 != None:
-            query6Filter = {"name": query6["name"]}
-            newvalues6 = {"$set": playerUpdate}
-            collection.update_one(query6Filter, newvalues6)
-            continue
-        query1 = collection.find_one({"name":{"$regex":re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId})
+        playerUpdate = {"playerId": playerId, "firstname": firstname, "lastname": lastname, "date": date,
+                        "fullname": fullname,
+                        "age": age, "nationality": nationality,
+                        "height": height, "weight": weight, "isInjured": isInjured,
+                        "photo": photo, "position": position, "rating": rating, "totalShots": totalShots,
+                        "shotsOn": shotsOn,
+                        "goals": goals, "concededGoals": concededGoals, "assists": assists, "saves": saves,
+                        "passes": passes,
+                        "keyPasses": keyPasses, "passesAccuracy": passesAccuracy, "tackles": tackles, "blocks": blocks,
+                        "interceptions": interceptions, "totalDuels": totalDuels, "duelsWon": duelsWon,
+                        "dribblesAttempts": dribblesAttempts, "dribblesSuccess": dribblesSuccess,
+                        "foulsDrawn": foulsDrawn,
+                        "foulsCommitted": foulsCommitted, "yellowCards": yellowCards, "yellowredCards": yellowredCards,
+                        "redCards": redCards, "penaltiesWon": penaltiesWon, "penaltiesSaved": penaltiesSaved,
+                        "penaltiesMissed": penaltiesMissed, "penaltiesScored": penaltiesScored,
+                        "penaltiesCommited": penaltiesCommited}
+        query1 = collection.find_one(
+            {"date": {"$regex": re.compile(date, re.IGNORECASE)}, "team": team, "teamId": teamId})
         if query1 != None:
-            query1Filter = {"name":query1["name"]}
-            newvalues1 = { "$set": playerUpdate }
+            query1Filter = {"date": date,"team":team,"teamId":teamId}
+            newvalues1 = {"$set": playerUpdate}
             collection.update_one(query1Filter, newvalues1)
             continue
-        query2 = collection.find_one({"nickname":{"$regex":re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId})
+
+        query2 = collection.find_one(
+            {"name": {"$regex": re.compile(name, re.IGNORECASE)}, "team": team, "teamId": teamId})
         if query2 != None:
-            query2Filter = {"name":query2["name"]}
+            query2Filter = {"name": {"$regex": re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId}
             newvalues2 = {"$set": playerUpdate}
             collection.update_one(query2Filter, newvalues2)
             continue
-        query3 = collection.find_one({"name":{"$regex":re.compile(lastname, re.IGNORECASE)},"team":team,"teamId":teamId})
+
+        query3 = collection.find_one(
+            {"nickname": {"$regex": re.compile(name, re.IGNORECASE)}, "team": team, "teamId": teamId})
         if query3 != None:
-            query3Filter = {"name":query3["name"]}
+            query3Filter = {"nickname": {"$regex": re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId}
             newvalues3 = {"$set": playerUpdate}
             collection.update_one(query3Filter, newvalues3)
-            continue
-        query4 = collection.find_one({"nickname":{"$regex":re.compile(lastname, re.IGNORECASE)},"team":team,"teamId":teamId})
-        if query4 != None:
-            query4Filter = {"name":query4["name"]}
-            newvalues4 = {"$set": playerUpdate}
-            collection.update_one(query4Filter, newvalues4)
             continue
