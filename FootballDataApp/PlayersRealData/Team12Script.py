@@ -3,7 +3,7 @@ import requests
 import json
 import re
 
-a, b = 'áãàéíóúüćşÁÉÍÓÚÜ-', 'aaaeiouucsAEIOUU '
+a, b = 'áãàéíóøúüćşÁÉÍÓÚÜ-', 'aaaeioouucsAEIOUU '
 trans = str.maketrans(a, b)
 
 teamId = 12
