@@ -65,3 +65,29 @@ for eachPlayer in allPlayers:
         playersRealData.update_one(eachPlayer, newvalues1)
         biwenger.update_one(query1, newValuesBiwenger)
         continue
+
+    playerNickname = eachPlayer["nickname"]
+    query2 = biwenger.find_one(
+        {"name": {"$regex": re.compile(playerNickname, re.IGNORECASE)}, "team": team, "biwengerFound": False})
+    if query2 != None:
+        playerUpdate = {"biwengerPoints": query2["points"], "biwengerPrice": query2["price"]}
+        newvalues2 = {"$set": playerUpdate}
+        playerUpdateBiwenger = {"biwengerFound": True}
+        newValuesBiwenger = {"$set": playerUpdateBiwenger}
+        playersRealData.update_one(eachPlayer, newvalues2)
+        biwenger.update_one(query2, newValuesBiwenger)
+        continue
+
+    nickNameList = playerNickname.split(" ")
+    if len(nickNameList)!=1:
+        nickNameAux = nickNameList[1]
+        query3 = biwenger.find_one(
+            {"name": {"$regex": re.compile(nickNameAux, re.IGNORECASE)}, "team": team, "biwengerFound": False})
+        if query3 != None:
+            playerUpdate = {"biwengerPoints": query3["points"], "biwengerPrice": query3["price"]}
+            newvalues3 = {"$set": playerUpdate}
+            playerUpdateBiwenger = {"biwengerFound": True}
+            newValuesBiwenger = {"$set": playerUpdateBiwenger}
+            playersRealData.update_one(eachPlayer, newvalues3)
+            biwenger.update_one(query3, newValuesBiwenger)
+            continue

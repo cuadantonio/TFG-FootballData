@@ -177,3 +177,11 @@ for i in pages:
             newvalues2 = {"$set": playerUpdate}
             collection.update_one(query2Filter, newvalues2)
             continue
+
+        query3 = collection.find_one(
+            {"name": {"$regex": re.compile(fullname, re.IGNORECASE)}, "team": team, "teamId": teamId})
+        if query3 != None:
+            query3Filter = {"name": {"$regex": re.compile(fullname, re.IGNORECASE)}, "team": team, "teamId": teamId}
+            newvalues3 = {"$set": playerUpdate}
+            collection.update_one(query3Filter, newvalues3)
+            continue
