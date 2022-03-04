@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-a, b = 'áãàéíóøöúüćčşÁÉÍÓÚÜ-', 'aaaeiooouuccsAEIOUU '
+a, b = 'áãàéíóøöúüćčşšÁÉÍÓÚÜ-', 'aaaeiooouuccssAEIOUU '
 trans = str.maketrans(a, b)
 
 teamId = 13

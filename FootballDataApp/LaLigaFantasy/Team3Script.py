@@ -19,7 +19,7 @@ def priceConverter(price):
             w.insert(0, x[i])
     return "".join(w)
 
-a, b = 'áãàéíóøöúüćčşÁÉÍÓÚÜ-', 'aaaeiooouuccsAEIOUU '
+a, b = 'áãàéíóøöúüćčşšÁÉÍÓÚÜ-', 'aaaeiooouuccssAEIOUU '
 trans = str.maketrans(a, b)
 
 team = "Atletico Madrid"

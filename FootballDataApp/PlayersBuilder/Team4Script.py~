@@ -3,12 +3,12 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-a, b = 'áãàéíóøöúüćčşšÁÉÍÓÚÜ-', 'aaaeiooouuccssAEIOUU '
+a, b = 'áãàéíóøöúüćčşÁÉÍÓÚÜ-', 'aaaeiooouuccsAEIOUU '
 trans = str.maketrans(a, b)
 
-teamId = 7
-team = "Celta Vigo"
-url = "https://www.lapreferente.com/E5829C13125-1/real-club-celta-de-vigo"
+teamId = 4
+team = "Barcelona"
+url = "https://www.lapreferente.com/E6164C13125-1/fc-barcelona"
 prefix = "https://www.lapreferente.com/"
 urls = []
 
