@@ -145,7 +145,7 @@ for i in pages:
         penaltiesSaved = statistics['penalty']['saved']
         if penaltiesSaved is None:
             penaltiesSaved = 0
-        playerUpdate1 = {"playerId": playerId, "firstname": firstname, "lastname": lastname, "date": date,
+        playerUpdate1 = {"playerId": playerId,"teamIdAux":id, "firstname": firstname, "lastname": lastname, "date": date,
                         "fullname": fullname,
                         "age": age, "nationality": nationality,
                         "height": height, "weight": weight, "isInjured": isInjured,

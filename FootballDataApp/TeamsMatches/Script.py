@@ -6,9 +6,6 @@ import re
 a, b = 'áãàéíóøöúüćčşšÁÉÍÓÚÜ-', 'aaaeiooouuccssAEIOUU '
 trans = str.maketrans(a, b)
 
-teamId = 15
-team = "Rayo Vallecano"
-id = 728
 url = "https://api-football-v1.p.rapidapi.com/v3/fixtures"
 
 client = pymongo.MongoClient(
@@ -16,11 +13,11 @@ client = pymongo.MongoClient(
 db = client["footballdata"]
 collection = db["TeamsMatches"]
 
-querystring = {"league":"140","season":"2021","team":id,"status":"FT"}
+querystring = {"league":"140","season":"2021","status":"FT"}
 
 headers = {
     'x-rapidapi-host': "api-football-v1.p.rapidapi.com",
-    'x-rapidapi-key': "575319a9d9msh5f6a8395fbf2077p1900c0jsn28756042fc08"
+    'x-rapidapi-key': "107c6e209amsh4c71238714f1793p1c06ecjsn222ae5091f9b"
 }
 
 response = requests.request("GET", url, headers=headers, params=querystring)
@@ -29,14 +26,14 @@ data = response.text
 parse_json = json.loads(data)
 
 jsonResponse = parse_json['response']
-for j in range(len(jsonResponse)):
-    fixtureId = jsonResponse[j]['fixture']['id']
-    homeTeam = jsonResponse[j]['teams']['home']['name']
-    homeTeamId = jsonResponse[j]['teams']['home']['id']
-    isHomeTeamWinner = jsonResponse[j]['teams']['home']['winner']
-    awayTeam = jsonResponse[j]['teams']['away']['name']
-    awayTeamId = jsonResponse[j]['teams']['away']['id']
-    isAwayTeamWinner = jsonResponse[j]['teams']['away']['winner']
+for j in jsonResponse:
+    fixtureId = j['fixture']['id']
+    homeTeam = j['teams']['home']['name']
+    homeTeamId = j['teams']['home']['id']
+    isHomeTeamWinner = j['teams']['home']['winner']
+    awayTeam = j['teams']['away']['name']
+    awayTeamId = j['teams']['away']['id']
+    isAwayTeamWinner = j['teams']['away']['winner']
     winner = ''
     if isHomeTeamWinner:
         winner = homeTeam
@@ -44,8 +41,8 @@ for j in range(len(jsonResponse)):
         winner = awayTeam
     else:
         winner = 'Tie'
-    homeGoals = jsonResponse[j]['goals']['home']
-    awayGoals = jsonResponse[j]['goals']['away']
+    homeGoals = j['goals']['home']
+    awayGoals = j['goals']['away']
     match = {"fixtureId":fixtureId,"homeTeam":homeTeam,"homeTeamId":homeTeamId,"awayTeam":awayTeam,"awayTeamId":awayTeamId,
              "winner":winner,"homeGoals":homeGoals,"awayGoals":awayGoals}
     collection.insert_one(match)

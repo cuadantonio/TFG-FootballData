@@ -16,7 +16,7 @@ client = pymongo.MongoClient(
 db = client["footballdata"]
 collection = db["PlayersRealData"]
 
-pages = [1,2,3]
+pages = [1,2,3,4]
 
 for i in pages:
     querystring = {"team": id, "season": "2021", "page": i}
@@ -145,7 +145,7 @@ for i in pages:
         penaltiesSaved = statistics['penalty']['saved']
         if penaltiesSaved is None:
             penaltiesSaved = 0
-        playerUpdate = {"playerId": playerId, "firstname": firstname, "lastname": lastname, "date": date,
+        playerUpdate = {"playerId": playerId,"teamIdAux":id, "firstname": firstname, "lastname": lastname, "date": date,
                         "fullname": fullname,
                         "age": age, "nationality": nationality,
                         "height": height, "weight": weight, "isInjured": isInjured,
@@ -183,4 +183,12 @@ for i in pages:
             query3Filter = {"nickname": {"$regex": re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId}
             newvalues3 = {"$set": playerUpdate}
             collection.update_one(query3Filter, newvalues3)
+            continue
+
+        query4 = collection.find_one(
+            {"name": {"$regex": re.compile(lastname, re.IGNORECASE)}, "team": team, "teamId": teamId})
+        if query4 != None:
+            query4Filter = {"name": {"$regex": re.compile(lastname, re.IGNORECASE)}, "team": team, "teamId": teamId}
+            newvalues4 = {"$set": playerUpdate}
+            collection.update_one(query4Filter, newvalues4)
             continue
