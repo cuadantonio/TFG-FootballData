@@ -8,7 +8,7 @@ trans = str.maketrans(a, b)
 
 teamId = 14
 team = "Osasuna"
-url = "https://www.lapreferente.com/E5853C13125-1/ca-osasuna"
+url = "https://www.lapreferente.com/E5853C14940-1/club-atletico-osasuna"
 prefix = "https://www.lapreferente.com/"
 urls = []
 

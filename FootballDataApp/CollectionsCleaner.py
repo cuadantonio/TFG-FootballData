@@ -3,15 +3,15 @@ import pymongo
 client = pymongo.MongoClient("mongodb+srv://root:eODi!SbR5Xqo@cluster0.e9hmo.mongodb.net/footballdata?retryWrites=true&w=majority")
 db = client["footballdata"]
 biwenger = db["BiwengerData"]
-comunio = db["ComunioData"]
-futmondo = db["FutmondoData"]
-misterfantasy = db["MisterFantasyData"]
-laligafantasy = db["LaLigaFantasyData"]
 playersrealdata = db["PlayersRealData"]
+teamsmatches = db["TeamsMatches"]
+teamsdatabymatch = db["TeamsDataByMatch"]
+playersdatabymatch = db["PlayersDataByMatch"]
+teamsdata = db["TeamsData"]
 
 biwenger.delete_many({})
-comunio.delete_many({})
-futmondo.delete_many({})
-misterfantasy.delete_many({})
-laligafantasy.delete_many({})
 playersrealdata.delete_many({})
+teamsmatches.delete_many({})
+teamsdatabymatch.delete_many({})
+playersdatabymatch.delete_many({})
+teamsdata.delete_many({})

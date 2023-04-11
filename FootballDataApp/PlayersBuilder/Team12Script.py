@@ -7,8 +7,8 @@ a, b = 'áãàéíóøöúüćčşšÁÉÍÓÚÜ-', 'aaaeiooouuccssAEIOUU '
 trans = str.maketrans(a, b)
 
 teamId = 12
-team = "Levante"
-url = "https://www.lapreferente.com/E4245C13125-1/levante-ud"
+team = "Valladolid"
+url = "https://www.lapreferente.com/E7520C14940-1/real-valladolid-cf"
 prefix = "https://www.lapreferente.com/"
 urls = []
 

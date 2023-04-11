@@ -7,19 +7,20 @@ a, b = 'áãàéíóøöúüćčşšÁÉÍÓÚÜ-', 'aaaeiooouuccssAEIOUU '
 trans = str.maketrans(a, b)
 
 teamId = 11
-team = "Granada"
-id = 715
+team = "Girona"
+id = 547
 url = "https://api-football-v1.p.rapidapi.com/v3/players"
 
 client = pymongo.MongoClient(
     "mongodb+srv://root:eODi!SbR5Xqo@cluster0.e9hmo.mongodb.net/footballdata?retryWrites=true&w=majority")
 db = client["footballdata"]
 collection = db["PlayersRealData"]
+playersDataByMatch = db["PlayersDataByMatch"]
 
 pages = [1,2,3]
 
 for i in pages:
-    querystring = {"team": id, "season": "2021", "page": i}
+    querystring = {"team": id, "season": "2022", "page": i}
 
     headers = {
         'x-rapidapi-host': "api-football-v1.p.rapidapi.com",
@@ -161,11 +162,38 @@ for i in pages:
                         "redCards": redCards, "penaltiesWon": penaltiesWon, "penaltiesSaved": penaltiesSaved,
                         "penaltiesMissed": penaltiesMissed, "penaltiesScored": penaltiesScored,
                         "penaltiesCommited": penaltiesCommited}
-
         query1 = collection.find_one(
             {"date": {"$regex": re.compile(date, re.IGNORECASE)}, "team": team, "teamId": teamId})
         if query1 != None:
             query1Filter = {"date": date,"team":team,"teamId":teamId}
             newvalues1 = {"$set": playerUpdate}
             collection.update_one(query1Filter, newvalues1)
+            byMatchFilter = {"playerId": playerId}
+            byMatchUpdate = {"date": date}
+            byMatchUpdateValues = {"$set": byMatchUpdate}
+            playersDataByMatch.update_many(byMatchFilter,byMatchUpdateValues)
+            continue
+
+        query2 = collection.find_one(
+            {"name": {"$regex": re.compile(name, re.IGNORECASE)}, "team": team, "teamId": teamId})
+        if query2 != None:
+            query2Filter = {"name": {"$regex": re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId}
+            newvalues2 = {"$set": playerUpdate}
+            collection.update_one(query2Filter, newvalues2)
+            byMatchFilter = {"playerId": playerId}
+            byMatchUpdate = {"date": date}
+            byMatchUpdateValues = {"$set": byMatchUpdate}
+            playersDataByMatch.update_many(byMatchFilter, byMatchUpdateValues)
+            continue
+
+        query3 = collection.find_one(
+            {"nickname": {"$regex": re.compile(name, re.IGNORECASE)}, "team": team, "teamId": teamId})
+        if query3 != None:
+            query3Filter = {"nickname": {"$regex": re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId}
+            newvalues3 = {"$set": playerUpdate}
+            collection.update_one(query3Filter, newvalues3)
+            byMatchFilter = {"playerId": playerId}
+            byMatchUpdate = {"date": date}
+            byMatchUpdateValues = {"$set": byMatchUpdate}
+            playersDataByMatch.update_many(byMatchFilter, byMatchUpdateValues)
             continue

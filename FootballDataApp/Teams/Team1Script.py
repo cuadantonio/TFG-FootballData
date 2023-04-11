@@ -7,8 +7,8 @@ a, b = 'áãàéíóøöúüćčşšÁÉÍÓÚÜ-', 'aaaeiooouuccssAEIOUU '
 trans = str.maketrans(a, b)
 
 teamId = 1
-team = "Alaves"
-id = 542
+team = "Almeria"
+id = 723
 url = "https://api-football-v1.p.rapidapi.com/v3/teams/statistics"
 
 client = pymongo.MongoClient(
@@ -16,7 +16,7 @@ client = pymongo.MongoClient(
 db = client["footballdata"]
 collection = db["TeamsData"]
 
-querystring = {"league": "140", "season": "2021", "team": id}
+querystring = {"league": "140", "season": "2022", "team": id}
 
 headers = {
     'x-rapidapi-host': "api-football-v1.p.rapidapi.com",
@@ -164,7 +164,7 @@ scoredPenalties = jsonResponse['penalty']['scored']['total']
 missedPenaltiesPercentage = jsonResponse['penalty']['missed']['percentage']
 missedPenalties = jsonResponse['penalty']['missed']['total']
 
-team = {"id":teamId,"name":teamName,"logo":logoURL,"totalYellowCards":totalYellowCards,"totalRedCards":totalRedCards,
+team = {"id":id,"name":teamName,"logo":logoURL,"totalYellowCards":totalYellowCards,"totalRedCards":totalRedCards,
         "homeCleanSheets":homeCleanSheets,"awayCleanSheets":awayCleanSheets,"homeFailedToScore":homeFailedToScore,
         "awayFailedToScore":awayFailedToScore,"totalWins":totalWins,"totalLoses":totalLoses,"totalDraws":totalDraws,
         "homeGoalsForAverage":homeGoalsForAverage,"awayGoalsForAverage":awayGoalsForAverage,"totalGoalsForAverage":totalGoalsForAverage,
@@ -172,4 +172,6 @@ team = {"id":teamId,"name":teamName,"logo":logoURL,"totalYellowCards":totalYello
         "homeGoalsFor":homeGoalsFor,"awayGoalsFor":awayGoalsFor,"totalGoalsFor":totalGoalsFor,"homeGoalsAgainst":homeGoalsAgainst,
         "awayGoalsAgainst":awayGoalsAgainst,"totalGoalsAgainst":totalGoalsAgainst,"scoredPenaltiesPercentage":scoredPenaltiesPercentage,
         "scoredPenalties":scoredPenalties,"missedPenaltiesPercentage":missedPenaltiesPercentage,"missedPenalties":missedPenalties}
-collection.insert_one(team)
+queryFilter = {"name": teamName}
+newValues = {"$set": team}
+collection.update_one(queryFilter,newValues)

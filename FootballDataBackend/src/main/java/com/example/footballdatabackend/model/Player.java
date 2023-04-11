@@ -53,21 +53,13 @@ public class Player {
     private String weight;
     private Integer yellowCards;
     private Integer yellowredCards;
-    private String comunioPoints;
-    private String comunioPrice;
-    private String misterFantasyPoints;
-    private String misterFantasyPrice;
-    private String futmondoPoints;
-    private String futmondoPrice;
     private String biwengerPoints;
     private String biwengerPrice;
-    private String laligaPoints;
-    private String laligaPrice;
 
     public Player() {
     }
 
-    public Player(ObjectId _id, String team, Integer teamId, String number, String name, String nickname, String date, Integer age, Integer assists, Integer blocks, Integer concededGoals, Integer dribblesAttempts, Integer dribblesSuccess, Integer duelsWon, String firstname, Integer foulsCommitted, Integer foulsDrawn, String fullname, Integer goals, String height, Integer interceptions, String isInjured, Integer keyPasses, String lastname, String nationality, Integer passes, Integer passesAccuracy, Integer penaltiesCommited, Integer penaltiesMissed, Integer penaltiesSaved, Integer penaltiesScored, Integer penaltiesWon, String photo, Integer playerId, String position, String rating, Integer redCards, Integer saves, Integer shotsOn, Integer tackles, Integer teamIdAux, Integer totalDuels, Integer totalShots, String weight, Integer yellowCards, Integer yellowredCards, String comunioPoints, String comunioPrice, String misterFantasyPoints, String misterFantasyPrice, String futmondoPoints, String futmondoPrice, String biwengerPoints, String biwengerPrice, String laligaPoints, String laligaPrice) {
+    public Player(ObjectId _id, String team, Integer teamId, String number, String name, String nickname, String date, Integer age, Integer assists, Integer blocks, Integer concededGoals, Integer dribblesAttempts, Integer dribblesSuccess, Integer duelsWon, String firstname, Integer foulsCommitted, Integer foulsDrawn, String fullname, Integer goals, String height, Integer interceptions, String isInjured, Integer keyPasses, String lastname, String nationality, Integer passes, Integer passesAccuracy, Integer penaltiesCommited, Integer penaltiesMissed, Integer penaltiesSaved, Integer penaltiesScored, Integer penaltiesWon, String photo, Integer playerId, String position, String rating, Integer redCards, Integer saves, Integer shotsOn, Integer tackles, Integer teamIdAux, Integer totalDuels, Integer totalShots, String weight, Integer yellowCards, Integer yellowredCards, String biwengerPoints, String biwengerPrice) {
         this._id = _id;
         this.team = team;
         this.teamId = teamId;
@@ -114,16 +106,8 @@ public class Player {
         this.weight = weight;
         this.yellowCards = yellowCards;
         this.yellowredCards = yellowredCards;
-        this.comunioPoints = comunioPoints;
-        this.comunioPrice = comunioPrice;
-        this.misterFantasyPoints = misterFantasyPoints;
-        this.misterFantasyPrice = misterFantasyPrice;
-        this.futmondoPoints = futmondoPoints;
-        this.futmondoPrice = futmondoPrice;
         this.biwengerPoints = biwengerPoints;
         this.biwengerPrice = biwengerPrice;
-        this.laligaPoints = laligaPoints;
-        this.laligaPrice = laligaPrice;
     }
 
     public String getTeam() {
@@ -486,54 +470,6 @@ public class Player {
         this.yellowredCards = yellowredCards;
     }
 
-    public String getComunioPoints() {
-        return comunioPoints;
-    }
-
-    public void setComunioPoints(String comunioPoints) {
-        this.comunioPoints = comunioPoints;
-    }
-
-    public String getComunioPrice() {
-        return comunioPrice;
-    }
-
-    public void setComunioPrice(String comunioPrice) {
-        this.comunioPrice = comunioPrice;
-    }
-
-    public String getMisterFantasyPoints() {
-        return misterFantasyPoints;
-    }
-
-    public void setMisterFantasyPoints(String misterFantasyPoints) {
-        this.misterFantasyPoints = misterFantasyPoints;
-    }
-
-    public String getMisterFantasyPrice() {
-        return misterFantasyPrice;
-    }
-
-    public void setMisterFantasyPrice(String misterFantasyPrice) {
-        this.misterFantasyPrice = misterFantasyPrice;
-    }
-
-    public String getFutmondoPoints() {
-        return futmondoPoints;
-    }
-
-    public void setFutmondoPoints(String futmondoPoints) {
-        this.futmondoPoints = futmondoPoints;
-    }
-
-    public String getFutmondoPrice() {
-        return futmondoPrice;
-    }
-
-    public void setFutmondoPrice(String futmondoPrice) {
-        this.futmondoPrice = futmondoPrice;
-    }
-
     public String getBiwengerPoints() {
         return biwengerPoints;
     }
@@ -550,27 +486,4 @@ public class Player {
         this.biwengerPrice = biwengerPrice;
     }
 
-    public String getLaligaPoints() {
-        return laligaPoints;
-    }
-
-    public void setLaligaPoints(String laligaPoints) {
-        this.laligaPoints = laligaPoints;
-    }
-
-    public String getLaligaPrice() {
-        return laligaPrice;
-    }
-
-    public void setLaligaPrice(String laligaPrice) {
-        this.laligaPrice = laligaPrice;
-    }
-
-    public ObjectId get_id() {
-        return _id;
-    }
-
-    public void set_id(ObjectId _id) {
-        this._id = _id;
-    }
 }

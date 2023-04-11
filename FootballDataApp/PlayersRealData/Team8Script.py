@@ -15,15 +15,16 @@ client = pymongo.MongoClient(
     "mongodb+srv://root:eODi!SbR5Xqo@cluster0.e9hmo.mongodb.net/footballdata?retryWrites=true&w=majority")
 db = client["footballdata"]
 collection = db["PlayersRealData"]
+playersDataByMatch = db["PlayersDataByMatch"]
 
 pages = [1,2,3]
 
 for i in pages:
-    querystring = {"team": id, "season": "2021", "page": i}
+    querystring = {"team": id, "season": "2022", "page": i}
 
     headers = {
         'x-rapidapi-host': "api-football-v1.p.rapidapi.com",
-        'x-rapidapi-key': "40096fb0aemshd78567eb775574cp1b1503jsn5d0e9a7c1cd4"
+        'x-rapidapi-key': "a0d8a1a01dmshd45ba295bf20a77p10e393jsn2fa631d6c90e"
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
@@ -146,21 +147,33 @@ for i in pages:
         if penaltiesSaved is None:
             penaltiesSaved = 0
         playerUpdate = {"playerId": playerId,"teamIdAux":id, "firstname": firstname, "lastname": lastname, "date": date,
-                         "fullname": fullname,
-                         "age": age, "nationality": nationality,
-                         "height": height, "weight": weight, "isInjured": isInjured,
-                         "photo": photo, "position": position, "rating": rating, "totalShots": totalShots,
-                         "shotsOn": shotsOn,
-                         "goals": goals, "concededGoals": concededGoals, "assists": assists, "saves": saves,
-                         "passes": passes,
-                         "keyPasses": keyPasses, "passesAccuracy": passesAccuracy, "tackles": tackles, "blocks": blocks,
-                         "interceptions": interceptions, "totalDuels": totalDuels, "duelsWon": duelsWon,
-                         "dribblesAttempts": dribblesAttempts, "dribblesSuccess": dribblesSuccess,
-                         "foulsDrawn": foulsDrawn,
-                         "foulsCommitted": foulsCommitted, "yellowCards": yellowCards, "yellowredCards": yellowredCards,
-                         "redCards": redCards, "penaltiesWon": penaltiesWon, "penaltiesSaved": penaltiesSaved,
-                         "penaltiesMissed": penaltiesMissed, "penaltiesScored": penaltiesScored,
-                         "penaltiesCommited": penaltiesCommited}
+                        "fullname": fullname,
+                        "age": age, "nationality": nationality,
+                        "height": height, "weight": weight, "isInjured": isInjured,
+                        "photo": photo, "position": position, "rating": rating, "totalShots": totalShots,
+                        "shotsOn": shotsOn,
+                        "goals": goals, "concededGoals": concededGoals, "assists": assists, "saves": saves,
+                        "passes": passes,
+                        "keyPasses": keyPasses, "passesAccuracy": passesAccuracy, "tackles": tackles, "blocks": blocks,
+                        "interceptions": interceptions, "totalDuels": totalDuels, "duelsWon": duelsWon,
+                        "dribblesAttempts": dribblesAttempts, "dribblesSuccess": dribblesSuccess,
+                        "foulsDrawn": foulsDrawn,
+                        "foulsCommitted": foulsCommitted, "yellowCards": yellowCards, "yellowredCards": yellowredCards,
+                        "redCards": redCards, "penaltiesWon": penaltiesWon, "penaltiesSaved": penaltiesSaved,
+                        "penaltiesMissed": penaltiesMissed, "penaltiesScored": penaltiesScored,
+                        "penaltiesCommited": penaltiesCommited}
+        if date == "28/02/1996":
+            query1Aux = collection.find_one(
+                {"name": {"$regex": re.compile(fullname, re.IGNORECASE)}, "team": team, "teamId": teamId})
+            if query1Aux != None:
+                query1AuxFilter = {"name": {"$regex": re.compile(fullname, re.IGNORECASE)}, "team": team, "teamId": teamId}
+                newvalues1Aux = {"$set": playerUpdate}
+                collection.update_one(query1AuxFilter, newvalues1Aux)
+                byMatchAuxFilter = {"playerId": playerId}
+                byMatchAuxUpdate = {"name": {"$regex": re.compile(fullname, re.IGNORECASE)}}
+                byMatchAuxUpdateValues = {"$set": byMatchAuxUpdate}
+                playersDataByMatch.update_many(byMatchAuxFilter, byMatchAuxUpdateValues)
+                continue
 
         query1 = collection.find_one(
             {"date": {"$regex": re.compile(date, re.IGNORECASE)}, "team": team, "teamId": teamId})
@@ -168,12 +181,32 @@ for i in pages:
             query1Filter = {"date": date,"team":team,"teamId":teamId}
             newvalues1 = {"$set": playerUpdate}
             collection.update_one(query1Filter, newvalues1)
+            byMatchFilter = {"playerId": playerId}
+            byMatchUpdate = {"date": date}
+            byMatchUpdateValues = {"$set": byMatchUpdate}
+            playersDataByMatch.update_many(byMatchFilter,byMatchUpdateValues)
             continue
 
         query2 = collection.find_one(
-            {"name": {"$regex": re.compile(lastname, re.IGNORECASE)}, "team": team, "teamId": teamId})
+            {"name": {"$regex": re.compile(name, re.IGNORECASE)}, "team": team, "teamId": teamId})
         if query2 != None:
-            query2Filter = {"name": {"$regex": re.compile(lastname, re.IGNORECASE)},"team":team,"teamId":teamId}
+            query2Filter = {"name": {"$regex": re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId}
             newvalues2 = {"$set": playerUpdate}
             collection.update_one(query2Filter, newvalues2)
+            byMatchFilter = {"playerId": playerId}
+            byMatchUpdate = {"date": date}
+            byMatchUpdateValues = {"$set": byMatchUpdate}
+            playersDataByMatch.update_many(byMatchFilter, byMatchUpdateValues)
+            continue
+
+        query3 = collection.find_one(
+            {"nickname": {"$regex": re.compile(name, re.IGNORECASE)}, "team": team, "teamId": teamId})
+        if query3 != None:
+            query3Filter = {"nickname": {"$regex": re.compile(name, re.IGNORECASE)},"team":team,"teamId":teamId}
+            newvalues3 = {"$set": playerUpdate}
+            collection.update_one(query3Filter, newvalues3)
+            byMatchFilter = {"playerId": playerId}
+            byMatchUpdate = {"date": date}
+            byMatchUpdateValues = {"$set": byMatchUpdate}
+            ##playersDataByMatch.update_many(byMatchFilter, byMatchUpdateValues)
             continue

@@ -26,15 +26,13 @@ public class MatchController {
 
     @GetMapping("/matches/{TeamId}")
     public ResponseEntity<List<Match>> getAllMatchesByTeamId(@PathVariable("TeamId") Integer teamId) {
-        Optional<List<Match>> matchesHome = matchRepository.findAllByHomeTeamId(teamId);
-        Optional<List<Match>> matchesAway = matchRepository.findAllByAwayTeamId(teamId);
-        matchesHome.get().addAll(matchesAway.get());
-        return new ResponseEntity<>(matchesHome.get(), HttpStatus.OK);
+        Optional<List<Match>> matches = matchRepository.findAllByTeamId(teamId);
+        return new ResponseEntity<>(matches.get(), HttpStatus.OK);
     }
 
-    @GetMapping("/match/{FixtureId}")
-    public ResponseEntity<Match> getMatchByFixtureId(@PathVariable("FixtureId") Integer fixtureId) {
-        Optional<Match> match = matchRepository.findMatchByFixtureId(fixtureId);
+    @GetMapping("/match/{FixtureId}/{TeamId}")
+    public ResponseEntity<Match> getMatchByFixtureIdAndTeamId(@PathVariable("FixtureId") Integer fixtureId,@PathVariable("TeamId") Integer TeamId) {
+        Optional<Match> match = matchRepository.findMatchByFixtureIdAndTeamId(fixtureId,TeamId);
         return new ResponseEntity<>(match.get(), HttpStatus.OK);
     }
 }

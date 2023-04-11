@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Optional;
 
 public interface MatchRepository extends MongoRepository<Match, ObjectId> {
-    Optional<List<Match>> findAllByHomeTeamId(Integer HomeTeamId);
-    Optional<List<Match>> findAllByAwayTeamId(Integer AwayTeamId);
-    Optional<Match> findMatchByFixtureId(Integer fixtureId);
+    Optional<List<Match>> findAllByTeamId(Integer TeamId);
+    Optional<Match> findMatchByFixtureIdAndTeamId(Integer fixtureId, Integer TeamId);
 }

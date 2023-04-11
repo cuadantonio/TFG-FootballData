@@ -27,31 +27,20 @@ playersAux = soup.find_all("div", {"class": "player-info"})
 for playerAux in playersAux:
     name = str(playerAux.find_all("div")[4].find("a").text).translate(trans)
     urlAux = playerAux.find_all("div")[4].find("a")["href"]
-    urls.append(urlAux)
     price = playerAux.find_all("div")[4].find("div",{"class":"price"}).text
     points = playerAux.find_all("div")[2].find("div",{"class":"player-points"}).text
-    player = {"name": name, "team": team, "points": points, "price": price, "biwengerFound": False}
-    biwenger.insert_one(player)
-
-for playerUrl in urls:
-    page2 = requests.get(playerUrl)
+    page2 = requests.get(urlAux)
     soup2 = BeautifulSoup(page2.content, "html.parser")
     infoAux1 = soup2.find("div", {"class": "player-profile-leftside"})
-    name = str(infoAux1.find("h1").text).translate(trans)
     dateAux = infoAux1.find_all("span")[7]
     dateSplit = str(dateAux.text).split(" ")
-    if len(dateSplit)!=1:
+    if len(dateSplit) != 1:
         month = months[dateSplit[1]]
         date = days[dateSplit[0]] + "/" + month + "/" + dateSplit[2]
     else:
         date = "00/00/0000"
-    query1 = biwenger.find_one(
-        {"name": {"$regex": re.compile(name, re.IGNORECASE)}, "team": team, "biwengerFound": False})
-    if query1 != None:
-        playerUpdate = {"date": date}
-        newvalues1 = {"$set": playerUpdate}
-        biwenger.update_one(query1, newvalues1)
-        continue
+    player = {"name": name, "team": team, "points": points, "price": price, "date":date, "biwengerFound": False}
+    biwenger.insert_one(player)
 
 allPlayers = playersRealData.find({"team": team})
 for eachPlayer in allPlayers:

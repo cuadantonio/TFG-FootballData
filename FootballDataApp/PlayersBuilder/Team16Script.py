@@ -8,7 +8,7 @@ trans = str.maketrans(a, b)
 
 teamId = 16
 team = "Real Madrid"
-url = "https://www.lapreferente.com/E6542C13125-1/real-madrid-cf"
+url = "https://www.lapreferente.com/E6542C14940-1/real-madrid-cf"
 prefix = "https://www.lapreferente.com/"
 urls = []
 
@@ -49,6 +49,8 @@ for playerUrl in urls:
             pos = i
             break
     dateAux2 = dateAux[pos+1].text
+    if dateAux2 == "01/09/1995":
+        dateAux2 = "07/08/1996"
     query = collection.find_one({"name": {"$regex": re.compile(playerName, re.IGNORECASE)}, "team": team, "teamId": teamId})
     queryFilter = {"name": playerName}
     playerUpdate = {"date":dateAux2}

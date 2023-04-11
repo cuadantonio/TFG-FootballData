@@ -9,8 +9,8 @@ trans = str.maketrans(a, b)
 months = {"enero":"01","febrero":"02","marzo":"03","abril":"04","mayo":"05","junio":"06","julio":"07","agosto":"08","septiembre":"09","octubre":"10","noviembre":"11","diciembre":"12"}
 days = {"1":"01","2":"02","3":"03","4":"04","5":"05","6":"06","7":"07","8":"08","9":"09","10":"10","11":"11","12":"12","13":"13","14":"14","15":"15","16":"16","17":"17","18":"18","19":"19","20":"20","21":"21","22":"22","23":"23","24":"24","25":"25","26":"26","27":"27","28":"28","29":"29","30":"30","31":"31"}
 
-team = "Levante"
-url = "https://biwenger.as.com/blog/equipos/levante/"
+team = "Valladolid"
+url = "https://biwenger.as.com/blog/equipos/real-valladolid/"
 urls = []
 
 client = pymongo.MongoClient(
@@ -27,31 +27,20 @@ playersAux = soup.find_all("div", {"class": "player-info"})
 for playerAux in playersAux:
     name = str(playerAux.find_all("div")[4].find("a").text).translate(trans)
     urlAux = playerAux.find_all("div")[4].find("a")["href"]
-    urls.append(urlAux)
     price = playerAux.find_all("div")[4].find("div",{"class":"price"}).text
     points = playerAux.find_all("div")[2].find("div",{"class":"player-points"}).text
-    player = {"name": name, "team": team, "points": points, "price": price, "biwengerFound": False}
-    biwenger.insert_one(player)
-
-for playerUrl in urls:
-    page2 = requests.get(playerUrl)
+    page2 = requests.get(urlAux)
     soup2 = BeautifulSoup(page2.content, "html.parser")
     infoAux1 = soup2.find("div", {"class": "player-profile-leftside"})
-    name = str(infoAux1.find("h1").text).translate(trans)
     dateAux = infoAux1.find_all("span")[7]
     dateSplit = str(dateAux.text).split(" ")
-    if len(dateSplit)!=1:
+    if len(dateSplit) != 1:
         month = months[dateSplit[1]]
         date = days[dateSplit[0]] + "/" + month + "/" + dateSplit[2]
     else:
         date = "00/00/0000"
-    query1 = biwenger.find_one(
-        {"name": {"$regex": re.compile(name, re.IGNORECASE)}, "team": team, "biwengerFound": False})
-    if query1 != None:
-        playerUpdate = {"date": date}
-        newvalues1 = {"$set": playerUpdate}
-        biwenger.update_one(query1, newvalues1)
-        continue
+    player = {"name": name, "team": team, "points": points, "price": price, "date":date, "biwengerFound": False}
+    biwenger.insert_one(player)
 
 allPlayers = playersRealData.find({"team": team})
 for eachPlayer in allPlayers:

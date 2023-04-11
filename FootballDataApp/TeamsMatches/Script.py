@@ -13,7 +13,7 @@ client = pymongo.MongoClient(
 db = client["footballdata"]
 collection = db["TeamsMatches"]
 
-querystring = {"league":"140","season":"2021","status":"FT"}
+querystring = {"league":"140","season":"2022","status":"FT"}
 
 headers = {
     'x-rapidapi-host': "api-football-v1.p.rapidapi.com",
