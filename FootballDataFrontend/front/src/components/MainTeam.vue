@@ -1,4 +1,4 @@
-<template>
+<template class ="alldoc">
   <div class="mainteam row">
     <div class="col-md-12" align="center">
       <img v-bind:src="this.team.logo">
@@ -10,8 +10,10 @@
     <div></div>
     <div class="col-md-6" align="center"><canvas id="goals" align="center"></canvas></div>
     <div class="col-md-6" align="center"><canvas id="goalsAverage" align="center"></canvas></div>
-    <div class="col-md-6" align="center"><canvas id="cards" align="center"></canvas></div>
-    <div class="col-md-6" align="center"><canvas id="scores" align="center"></canvas></div>
+    <div class="col-md-12" style="height: 50%; width: 50%; left: 100;" align="center"><canvas id="cards" align="center"></canvas></div>
+    <br>
+    <div class="col-md-6" align="center"><canvas id="cleanSheets" align="center"></canvas></div>
+    <div class="col-md-6" align="center"><canvas id="failedToScore" align="center"></canvas></div>
     <div class ="col-md-6 float-right">
       <br>
       <h4>Players List</h4>
@@ -73,7 +75,8 @@ export default {
       awayCleanSheets: '',
       homeFailedToScore: '',
       awayFailedToScore: '',
-      scoresChart: {}
+      cleanSheetsChart: {},
+      failedToScoreChart: {}
     }
   },
   methods: {
@@ -113,21 +116,11 @@ export default {
     this.$forceUpdate()
   },
   updated () {
-    this.results.push(this.team.totalWins)
-    this.results.push(this.team.totalLoses)
-    this.results.push(this.team.totalDraws)
-    this.goalsFor.push(this.team.homeGoalsFor)
-    this.goalsFor.push(this.team.awayGoalsFor)
-    this.goalsFor.push(this.team.totalGoalsFor)
-    this.goalsAgainst.push(this.team.homeGoalsAgainst)
-    this.goalsAgainst.push(this.team.awayGoalsAgainst)
-    this.goalsAgainst.push(this.team.totalGoalsAgainst)
-    this.goalsForAverage.push(this.team.homeGoalsForAverage)
-    this.goalsForAverage.push(this.team.awayGoalsForAverage)
-    this.goalsForAverage.push(this.team.totalGoalsForAverage)
-    this.goalsAgainstAverage.push(this.team.homeGoalsAgainstAverage)
-    this.goalsAgainstAverage.push(this.team.awayGoalsAgainstAverage)
-    this.goalsAgainstAverage.push(this.team.totalGoalsAgainstAverage)
+    this.results = [this.team.totalWins, this.team.totalLoses, this.team.totalDraws]
+    this.goalsFor = [this.team.homeGoalsFor, this.team.awayGoalsFor, this.team.totalGoalsFor]
+    this.goalsAgainst = [this.team.homeGoalsAgainst, this.team.awayGoalsAgainst, this.team.totalGoalsAgainst]
+    this.goalsForAverage = [this.team.homeGoalsForAverage, this.team.awayGoalsForAverage, this.team.totalGoalsForAverage]
+    this.goalsAgainstAverage = [this.team.homeGoalsAgainstAverage, this.team.awayGoalsAgainstAverage, this.team.totalGoalsAgainstAverage]
     this.yellowCards = this.team.totalYellowCards
     this.redCards = this.team.totalRedCards
     this.homeCleanSheets = this.team.homeCleanSheets
@@ -144,7 +137,7 @@ export default {
               label: 'Results',
               data: this.results,
               base: 0,
-              backgroundColor: ['green', '#FF0000', 'ED830C']
+              backgroundColor: ['#2F6690', '#FFA100', '#EA526F']
             }
           ]
         }
@@ -160,13 +153,13 @@ export default {
               label: 'Goals For',
               data: this.goalsFor,
               base: 0,
-              backgroundColor: '#0C67F0'
+              backgroundColor: '#AF9AB2'
             },
             {
               label: 'Goals Against',
               data: this.goalsAgainst,
               base: 0,
-              backgroundColor: '#E68805'
+              backgroundColor: '#59C3C3'
             }
           ]
         }
@@ -181,13 +174,13 @@ export default {
               label: 'Goals For Average',
               data: this.goalsForAverage,
               base: 0,
-              backgroundColor: '#0C67F0'
+              backgroundColor: '#AF9AB2'
             },
             {
               label: 'Goals Against Average',
               data: this.goalsAgainstAverage,
               base: 0,
-              backgroundColor: '#E68805'
+              backgroundColor: '#59C3C3'
             }
           ]
         }
@@ -201,24 +194,33 @@ export default {
             {
               data: [this.yellowCards, this.redCards],
               base: 0,
-              backgroundColor: ['#DEE605', '#ED1A02']
+              backgroundColor: ['#2F6690', '#FFA100']
             }
           ]
         }
       })
-    this.scoresChart = new Chart(document.getElementById('scores'),
+    this.scoresChart = new Chart(document.getElementById('cleanSheets'),
       {
         type: 'pie',
         data: {
-          labels: ['Home Clean Sheets', 'Away Clean Sheets', 'Home Failed To Score', 'Away Failed To Score'],
+          labels: ['Home Clean Sheets', 'Away Clean Sheets'],
           datasets: [
             {
               data: [this.homeCleanSheets, this.awayCleanSheets],
-              backgroundColor: ['#0C67F0', '#E68805']
-            },
+              backgroundColor: ['#AF9AB2', '#59C3C3']
+            }
+          ]
+        }
+      })
+    this.failedToScoreChart = new Chart(document.getElementById('failedToScore'),
+      {
+        type: 'pie',
+        data: {
+          labels: ['Home Failed To Score', 'Away Failed To Score'],
+          datasets: [
             {
               data: [this.homeFailedToScore, this.awayFailedToScore],
-              backgroundColor: ['#0C67F0', '#E68805']
+              backgroundColor: ['#AF9AB2', '#59C3C3']
             }
           ]
         }
@@ -229,6 +231,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.mainteam {
+  font-family: 'Trebuchet MS', sans-serif;
+}
 .list-group {
   text-align: left;
   max-width: 750px;
@@ -246,6 +252,10 @@ export default {
   top: 15px;
 }
 #results{
+  position: relative;
+  left: 320px;
+}
+#cards{
   position: relative;
   left: 320px;
 }
