@@ -1,4 +1,4 @@
-<template class ="alldoc">
+<template>
   <div class="mainteam row">
     <div class="col-md-12" align="center">
       <img v-bind:src="this.team.logo">
@@ -23,8 +23,8 @@
         v-for="(player,index) in players"
         :key="index"
         >
-          <span class="playerName">{{ player.name }}</span>
-          <img class = "players" v-bind:src="player.photo" align="right"/>
+          <router-link :to="'/player/' + player.playerId"><span class="playerName">{{ player.name }}</span></router-link>
+          <router-link :to="'/player/' + player.playerId"><img class = "players" v-bind:src="player.photo" align="right"/></router-link>
         </li>
       </ul>
     </div>
@@ -163,7 +163,8 @@ export default {
             }
           ]
         }
-      })
+      }
+    )
     this.goalsAverageChart = new Chart(document.getElementById('goalsAverage'),
       {
         type: 'bar',
@@ -184,7 +185,8 @@ export default {
             }
           ]
         }
-      })
+      }
+    )
     this.cardsChart = new Chart(document.getElementById('cards'),
       {
         type: 'pie',
@@ -198,7 +200,8 @@ export default {
             }
           ]
         }
-      })
+      }
+    )
     this.scoresChart = new Chart(document.getElementById('cleanSheets'),
       {
         type: 'pie',
@@ -211,7 +214,8 @@ export default {
             }
           ]
         }
-      })
+      }
+    )
     this.failedToScoreChart = new Chart(document.getElementById('failedToScore'),
       {
         type: 'pie',
@@ -224,7 +228,8 @@ export default {
             }
           ]
         }
-      })
+      }
+    )
   }
 }
 </script>
