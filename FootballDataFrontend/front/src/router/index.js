@@ -4,6 +4,7 @@ import MainPage from '@/components/MainPage'
 import MainTeam from '@/components/MainTeam'
 import MainPlayer from '@/components/MainPlayer'
 import FrontPage from '@/components/FrontPage'
+import TeamMatch from '@/components/TeamMatch'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/',
       name: 'FrontPage',
       component: FrontPage
+    },
+    {
+      path: '/teammatch/:fixtureId/:teamId/:rivalTeamId',
+      name: 'TeamMatch',
+      component: TeamMatch
     }
   ]
 })

@@ -37,7 +37,7 @@
         v-for="(match,indexMatch) in matches"
         :key="indexMatch"
         >
-          <p align="center">Round {{ match.round }} vs {{ match.rivalTeam }} Score: <span :style= "[team.id == match.winnerId ? {'color':'green'} : match.winnerId == -1 ? {'color':'orange'} : {'color':'red'}]">{{ match.score }}</span></p>
+          <router-link :to="'/teammatch/' + match.fixtureId + '/' + match.teamId + '/' + match.rivalTeamId"><p align="center">Round {{ match.round }} vs {{ match.rivalTeam }} Score: <span :style= "[team.id == match.winnerId ? {'color':'green'} : match.winnerId == -1 ? {'color':'orange'} : {'color':'red'}]">{{ match.score }}</span></p></router-link>
         </li>
       </ul>
     </div>
@@ -230,6 +230,7 @@ export default {
         }
       }
     )
+    Chart.defaults.global.defaultFontColor = '#fff'
   }
 }
 </script>
