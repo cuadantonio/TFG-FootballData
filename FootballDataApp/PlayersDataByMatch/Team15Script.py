@@ -144,6 +144,9 @@ for localFixtureId in localFixturesIds:
             winnerId = id
         elif winnerAway == True:
             winnerId = rivalTeamId
+        homeGoals = str(jsonResponse['goals']['home'])
+        awayGoals = str(jsonResponse['goals']['away'])
+        score = homeGoals + '-' + awayGoals
         playerToAdd = {'fixtureId': localFixtureId, 'round': round, 'team': team, 'teamId': id, 'rivalTeam': rivalTeam,
                        'rivalTeamId': rivalTeamId, 'playerId': playerId, 'playerName': playerName,
                        'playerPhoto': playerPhoto, 'minutes': minutes,
@@ -158,7 +161,7 @@ for localFixtureId in localFixturesIds:
                        'foulsDrawn': foulsDrawn, 'foulsCommitted': foulsCommitted, 'yellowCards': yellowCards,
                        'redCards': redCards, 'penaltiesWon': penaltiesWon,
                        'penaltiesCommitted': penaltiesCommitted, 'penaltiesScored': penaltiesScored,
-                       'penaltiesMissed': penaltiesMissed, 'penaltiesSaved': penaltiesSaved, 'winnerId': winnerId
+                       'penaltiesMissed': penaltiesMissed, 'penaltiesSaved': penaltiesSaved, 'winnerId': winnerId, 'score': score
                        }
         query = byMatch.find_one({"fixtureId": localFixtureId, "playerId": playerId})
         if query == None:
@@ -283,6 +286,9 @@ for awayFixtureId in awayFixturesIds:
             winnerId = rivalTeamId
         elif winnerAway == True:
             winnerId = id
+        homeGoals = str(jsonResponse['goals']['home'])
+        awayGoals = str(jsonResponse['goals']['away'])
+        score = homeGoals + '-' + awayGoals
         playerToAdd = {'fixtureId': awayFixtureId, 'round': round, 'team': team, 'teamId': id, 'rivalTeam': rivalTeam,
                        'rivalTeamId': rivalTeamId, 'playerId': playerId, 'playerName': playerName,
                        'playerPhoto': playerPhoto, 'minutes': minutes,
@@ -297,7 +303,7 @@ for awayFixtureId in awayFixturesIds:
                        'foulsDrawn': foulsDrawn, 'foulsCommitted': foulsCommitted, 'yellowCards': yellowCards,
                        'redCards': redCards, 'penaltiesWon': penaltiesWon,
                        'penaltiesCommitted': penaltiesCommitted, 'penaltiesScored': penaltiesScored,
-                       'penaltiesMissed': penaltiesMissed, 'penaltiesSaved': penaltiesSaved, 'winnerId': winnerId
+                       'penaltiesMissed': penaltiesMissed, 'penaltiesSaved': penaltiesSaved, 'winnerId': winnerId, 'score': score
                        }
         query = byMatch.find_one({"fixtureId": awayFixtureId, "playerId": playerId})
         if query == None:

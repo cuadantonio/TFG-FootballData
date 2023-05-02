@@ -144,13 +144,16 @@ for localFixtureId in localFixturesIds:
             winnerId = id
         elif winnerAway == True:
             winnerId = rivalTeamId
+        homeGoals = str(jsonResponse['goals']['home'])
+        awayGoals = str(jsonResponse['goals']['away'])
+        score = homeGoals + '-' + awayGoals
         playerToAdd = {'fixtureId':localFixtureId,'round':round,'team':team,'teamId':id,'rivalTeam':rivalTeam,'rivalTeamId':rivalTeamId,'playerId':playerId,'playerName':playerName,'playerPhoto':playerPhoto,'minutes':minutes,
                        'offsides':offsides,'totalShots':totalShots,'shotsOn':shotsOn,'totalGoals':totalGoals, 'concededGoals':concededGoals,
                        'assists':assists,'saves':saves,'totalPasses':totalPasses,'keyPasses':keyPasses,'passesAccuracy':passesAccuracy,
                        'totalTackles':totalTackles,'blockTackles':blockTackles,'interceptionTackles':interceptionTackles,'totalDuels':totalDuels,
                        'duelsWon':duelsWon,'dribblesAttempts':dribblesAttempts,'dribblesSuccess':dribblesSuccess,'dribblesPast':dribblesPast,
                        'foulsDrawn':foulsDrawn,'foulsCommitted':foulsCommitted,'yellowCards':yellowCards,'redCards':redCards,'penaltiesWon':penaltiesWon,
-                       'penaltiesCommitted':penaltiesCommitted,'penaltiesScored':penaltiesScored,'penaltiesMissed':penaltiesMissed,'penaltiesSaved':penaltiesSaved,'winnerId':winnerId
+                       'penaltiesCommitted':penaltiesCommitted,'penaltiesScored':penaltiesScored,'penaltiesMissed':penaltiesMissed,'penaltiesSaved':penaltiesSaved,'winnerId':winnerId,'score':score
                        }
         query = byMatch.find_one({"fixtureId": localFixtureId, "playerId": playerId})
         if query == None:
@@ -275,6 +278,9 @@ for awayFixtureId in awayFixturesIds:
             winnerId = rivalTeamId
         elif winnerAway == True:
             winnerId = id
+        homeGoals = str(jsonResponse['goals']['home'])
+        awayGoals = str(jsonResponse['goals']['away'])
+        score = homeGoals + '-' + awayGoals
         playerToAdd = {'fixtureId': awayFixtureId, 'round': round, 'team': team, 'teamId': id, 'rivalTeam': rivalTeam,
                        'rivalTeamId': rivalTeamId, 'playerId': playerId, 'playerName': playerName,
                        'playerPhoto': playerPhoto, 'minutes': minutes,
@@ -289,7 +295,7 @@ for awayFixtureId in awayFixturesIds:
                        'foulsDrawn': foulsDrawn, 'foulsCommitted': foulsCommitted, 'yellowCards': yellowCards,
                        'redCards': redCards, 'penaltiesWon': penaltiesWon,
                        'penaltiesCommitted': penaltiesCommitted, 'penaltiesScored': penaltiesScored,
-                       'penaltiesMissed': penaltiesMissed, 'penaltiesSaved': penaltiesSaved, 'winnerId': winnerId
+                       'penaltiesMissed': penaltiesMissed, 'penaltiesSaved': penaltiesSaved, 'winnerId': winnerId, 'score': score
                        }
         query = byMatch.find_one({"fixtureId": awayFixtureId, "playerId": playerId})
         if query == None:
