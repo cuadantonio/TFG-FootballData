@@ -174,4 +174,4 @@ team = {"id":id,"name":teamName,"logo":logoURL,"totalYellowCards":totalYellowCar
         "scoredPenalties":scoredPenalties,"missedPenaltiesPercentage":missedPenaltiesPercentage,"missedPenalties":missedPenalties}
 queryFilter = {"name": teamName}
 newValues = {"$set": team}
-collection.insert_one(team)
+collection.update_one(queryFilter,newValues)

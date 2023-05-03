@@ -20,7 +20,7 @@ querystring = {"league": "140", "season": "2022", "team": id}
 
 headers = {
     'x-rapidapi-host': "api-football-v1.p.rapidapi.com",
-    'x-rapidapi-key': "797241ee10msha0fdd5cc808aeaep18d1e3jsn5f29d21f40f6"
+    'x-rapidapi-key': "40096fb0aemshd78567eb775574cp1b1503jsn5d0e9a7c1cd4"
 }
 
 response = requests.request("GET", url, headers=headers, params=querystring)

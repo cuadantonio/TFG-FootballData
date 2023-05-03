@@ -6,31 +6,31 @@
                     <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
                     <th><router-link :to="'/team/' + teamTwo.id"><img v-bind:src="teamTwo.logo"/></router-link></th>
                     <th><router-link :to="'/team/' + teamThree.id"><img v-bind:src="teamThree.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamFour.id"><img v-bind:src="teamFour.logo"/></router-link></th>
                 </tr>
                 <tr>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamFive.id"><img v-bind:src="teamFive.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamSix.id"><img v-bind:src="teamSix.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamSeven.id"><img v-bind:src="teamSeven.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamEight.id"><img v-bind:src="teamEight.logo"/></router-link></th>
                 </tr>
                 <tr>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamNine.id"><img v-bind:src="teamNine.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamTen.id"><img v-bind:src="teamTen.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamEleven.id"><img v-bind:src="teamEleven.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamTwelve.id"><img v-bind:src="teamTwelve.logo"/></router-link></th>
                 </tr>
                 <tr>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamThirteen.id"><img v-bind:src="teamThirteen.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamFourteen.id"><img v-bind:src="teamFourteen.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamFifteen.id"><img v-bind:src="teamFifteen.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamSixteen.id"><img v-bind:src="teamSixteen.logo"/></router-link></th>
                 </tr>
                 <tr>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
-                    <th><router-link :to="'/team/' + teamOne.id"><img v-bind:src="teamOne.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamSeventeen.id"><img v-bind:src="teamSeventeen.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamEighteen.id"><img v-bind:src="teamEighteen.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamNineteen.id"><img v-bind:src="teamNineteen.logo"/></router-link></th>
+                    <th><router-link :to="'/team/' + teamTwenty.id"><img v-bind:src="teamTwenty.logo"/></router-link></th>
                 </tr>
             </tbody>
         </table>
@@ -94,7 +94,7 @@ export default {
       this.teamSeventeen = this.teams[16]
       this.teamEighteen = this.teams[17]
       this.teamNineteen = this.teams[18]
-      this.teamTwelve = this.teams[19]
+      this.teamTwenty = this.teams[19]
       console.log(response.data)
     })
       .catch((e) => {

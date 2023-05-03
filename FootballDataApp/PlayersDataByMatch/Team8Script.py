@@ -34,7 +34,7 @@ for localFixtureId in localFixturesIds:
 
     headers = {
         "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
-        "X-RapidAPI-Key": "797241ee10msha0fdd5cc808aeaep18d1e3jsn5f29d21f40f6"
+        "X-RapidAPI-Key": "40096fb0aemshd78567eb775574cp1b1503jsn5d0e9a7c1cd4"
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
@@ -176,7 +176,7 @@ for awayFixtureId in awayFixturesIds:
 
     headers = {
         "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
-        "X-RapidAPI-Key": "797241ee10msha0fdd5cc808aeaep18d1e3jsn5f29d21f40f6"
+        "X-RapidAPI-Key": "40096fb0aemshd78567eb775574cp1b1503jsn5d0e9a7c1cd4"
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
