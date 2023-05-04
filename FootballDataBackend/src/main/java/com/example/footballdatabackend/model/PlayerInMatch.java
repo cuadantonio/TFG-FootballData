@@ -46,11 +46,12 @@ public class PlayerInMatch {
     private Integer penaltiesMissed;
     private Integer penaltiesSaved;
     private Integer winnerId;
+    private String score;
 
     public PlayerInMatch() {
     }
 
-    public PlayerInMatch(ObjectId _id, Integer fixtureId, Integer round, String team, Integer teamId, String rivalTeam, Integer rivalTeamId, Integer playerId, String playerName, String playerPhoto, Integer minutes, Integer offsides, Integer totalShots, Integer shotsOn, Integer totalGoals, Integer concededGoals, Integer assists, Integer saves, Integer totalPasses, Integer keyPasses, String passesAccuracy, Integer totalTackles, Integer blockTackles, Integer interceptionTackles, Integer totalDuels, Integer duelsWon, Integer dribblesAttempts, Integer dribblesSuccess, Integer dribblesPast, Integer foulsDrawn, Integer foulsCommitted, Integer yellowCards, Integer redCards, Integer penaltiesWon, Integer penaltiesCommited, Integer penaltiesScored, Integer penaltiesMissed, Integer penaltiesSaved, Integer winnerId) {
+    public PlayerInMatch(ObjectId _id, Integer fixtureId, Integer round, String team, Integer teamId, String rivalTeam, Integer rivalTeamId, Integer playerId, String playerName, String playerPhoto, Integer minutes, Integer offsides, Integer totalShots, Integer shotsOn, Integer totalGoals, Integer concededGoals, Integer assists, Integer saves, Integer totalPasses, Integer keyPasses, String passesAccuracy, Integer totalTackles, Integer blockTackles, Integer interceptionTackles, Integer totalDuels, Integer duelsWon, Integer dribblesAttempts, Integer dribblesSuccess, Integer dribblesPast, Integer foulsDrawn, Integer foulsCommitted, Integer yellowCards, Integer redCards, Integer penaltiesWon, Integer penaltiesCommited, Integer penaltiesScored, Integer penaltiesMissed, Integer penaltiesSaved, Integer winnerId, String score) {
         this._id = _id;
         this.fixtureId = fixtureId;
         this.round = round;
@@ -90,6 +91,7 @@ public class PlayerInMatch {
         this.penaltiesMissed = penaltiesMissed;
         this.penaltiesSaved = penaltiesSaved;
         this.winnerId = winnerId;
+        this.score = score;
     }
 
     public ObjectId get_id() {
@@ -402,5 +404,13 @@ public class PlayerInMatch {
 
     public void setWinnerId(Integer winnerId) {
         this.winnerId = winnerId;
+    }
+
+    public String getScore() {
+        return score;
+    }
+
+    public void setScore(String score) {
+        this.score = score;
     }
 }

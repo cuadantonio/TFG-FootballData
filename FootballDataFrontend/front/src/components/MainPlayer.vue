@@ -53,7 +53,7 @@
         v-for="(match,indexMatch) in playerMatches"
         :key="indexMatch"
         >
-          <p align="center">Round {{ match.round }} vs {{ match.rivalTeam }} Score: <span :style= "[match.teamId == match.winnerId ? {'color':'green'} : match.winnerId == -1 ? {'color':'orange'} : {'color':'red'}]">{{ match.winnerId }}</span></p>
+          <router-link :to="'/playermatch/' + match.fixtureId + '/' + match.playerId + '/' + match.teamId + '/' + match.rivalTeamId"><p align="center">Round {{ match.round }} vs {{ match.rivalTeam }} Score: <span :style= "[match.teamId == match.winnerId ? {'color':'green'} : match.winnerId == -1 ? {'color':'orange'} : {'color':'red'}]">{{ match.score }}</span></p></router-link>
         </li>
       </ul>
       </div>
