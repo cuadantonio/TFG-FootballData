@@ -268,7 +268,7 @@ export default {
         }
       }
     )
-    Chart.defaults.global.defaultFontColor = '#fff'
+    Chart.defaults.global.defaultFontColor = '#000000'
   }
 }
 </script>
