@@ -13,7 +13,7 @@ positionsValues = [0,0,0,0]
 nationalitiesDef = ["Albania","Algeria","Argentina","Austria","Belgium","Bosnia and Herzegovina","Brazil","Cameroon","Canada","Central African Republic","Chile","Colombia","Congo DR","Croatia","Côte d'Ivoire","Denmark","Dominican Republic","Ecuador","France","Georgia","Germany","Ghana","Guadeloupe","Guinea","Honduras","Italy","Japan","Korea Republic","Kosovo","Mali","Mexico","Montenegro","Morocco","Mozambique","Netherlands","Nigeria","North Macedonia","Norway","Paraguay","Peru","Poland","Portugal","Republic of Ireland","Senegal","Serbia","Slovakia","Slovenia","Spain","Sweden","Switzerland","Togo","Türkiye","USA","Ukraine","Uruguay","Venezuela","Zimbabwe"]
 nationalitiesValues = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
-agesDef = ["Less than 25","Between 25 and 35","More than 35"]
+agesDef = ["Menores de 25","Entre 25 y 35","Mas de 35"]
 agesValues = [0,0,0]
 
 for player in players:
@@ -21,9 +21,9 @@ for player in players:
     indexPosition = positionsDef.index(position)
     positionsValues[indexPosition] = positionsValues[indexPosition] + 1
 
-    nationality = player["nationality"]
-    indexNationality = nationalitiesDef.index(nationality)
-    nationalitiesValues[indexNationality] = nationalitiesValues[indexNationality] + 1
+    """nationality = player["nationality"]
+    indexNationality = nationalitaiesDef.index(nationality)
+    nationalitiesValues[indexNationality] = nationalitiesValues[indexNationality] + 1"""
 
     age = player["age"]
     if age < 25:
