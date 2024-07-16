@@ -1,0 +1,381 @@
+_id,awayGoals,awayTeam,awayTeamId,fixtureId,homeGoals,homeTeam,homeTeamId,winner
+65d2f5bac0c736a4f7d14098,0,Mallorca,798,877942,0,Athletic Club,531,Tie
+65d2f5bac0c736a4f7d14099,0,Rayo Vallecano,728,877943,0,Barcelona,529,Tie
+65d2f5bac0c736a4f7d1409a,0,Elche,797,877944,3,Real Betis,543,Real Betis
+65d2f5bac0c736a4f7d1409b,2,Espanyol,540,877945,2,Celta Vigo,538,Tie
+65d2f5bac0c736a4f7d1409c,1,Real Sociedad,548,877946,0,Cadiz,724,Real Sociedad
+65d2f5bac0c736a4f7d1409d,1,Sevilla,536,877947,2,Osasuna,727,Osasuna
+65d2f5bac0c736a4f7d1409e,2,Real Madrid,541,877948,1,Almeria,723,Real Madrid
+65d2f5bac0c736a4f7d1409f,3,Atletico Madrid,530,877949,0,Getafe,546,Atletico Madrid
+65d2f5bac0c736a4f7d140a0,3,Villarreal,533,877950,0,Valladolid,720,Villarreal
+65d2f5bac0c736a4f7d140a1,0,Girona,547,877951,1,Valencia,532,Valencia
+65d2f5bbc0c736a4f7d140a2,0,Valencia,532,877952,1,Athletic Club,531,Athletic Club
+65d2f5bbc0c736a4f7d140a3,2,Villarreal,533,877953,0,Atletico Madrid,530,Villarreal
+65d2f5bbc0c736a4f7d140a4,4,Real Madrid,541,877954,1,Celta Vigo,538,Real Madrid
+65d2f5bbc0c736a4f7d140a5,2,Rayo Vallecano,728,877955,0,Espanyol,540,Rayo Vallecano
+65d2f5bbc0c736a4f7d140a6,1,Valladolid,720,877956,1,Sevilla,536,Tie
+65d2f5bbc0c736a4f7d140a7,4,Barcelona,529,877957,1,Real Sociedad,548,Barcelona
+65d2f5bbc0c736a4f7d140a8,2,Real Betis,543,877958,1,Mallorca,798,Real Betis
+65d2f5bbc0c736a4f7d140a9,1,Getafe,546,877959,3,Girona,547,Girona
+65d2f5bbc0c736a4f7d140aa,0,Cadiz,724,877960,2,Osasuna,727,Osasuna
+65d2f5bbc0c736a4f7d140ab,1,Almeria,723,877961,1,Elche,797,Tie
+65d2f5bbc0c736a4f7d140ac,0,Valladolid,720,877962,4,Barcelona,529,Barcelona
+65d2f5bbc0c736a4f7d140ad,0,Osasuna,727,877963,1,Real Betis,543,Real Betis
+65d2f5bbc0c736a4f7d140ae,1,Real Sociedad,548,877964,0,Elche,797,Real Sociedad
+65d2f5bbc0c736a4f7d140af,0,Villarreal,533,877965,0,Getafe,546,Tie
+65d2f5bbc0c736a4f7d140b0,3,Real Madrid,541,877966,1,Espanyol,540,Real Madrid
+65d2f5bbc0c736a4f7d140b1,1,Sevilla,536,877967,2,Almeria,723,Almeria
+65d2f5bbc0c736a4f7d140b2,4,Athletic Club,531,877968,0,Cadiz,724,Athletic Club
+65d2f5bbc0c736a4f7d140b3,1,Atletico Madrid,530,877969,0,Valencia,532,Atletico Madrid
+65d2f5bcc0c736a4f7d140b4,1,Celta Vigo,538,877970,0,Girona,547,Celta Vigo
+65d2f5bcc0c736a4f7d140b5,2,Mallorca,798,877971,0,Rayo Vallecano,728,Mallorca
+65d2f5bcc0c736a4f7d140b6,1,Espanyol,540,877972,0,Athletic Club,531,Espanyol
+65d2f5bcc0c736a4f7d140b7,1,Rayo Vallecano,728,877973,2,Osasuna,727,Osasuna
+65d2f5bcc0c736a4f7d140b8,1,Atletico Madrid,530,877974,1,Real Sociedad,548,Tie
+65d2f5bcc0c736a4f7d140b9,3,Barcelona,529,877975,0,Sevilla,536,Barcelona
+65d2f5bcc0c736a4f7d140ba,1,Real Betis,543,877976,2,Real Madrid,541,Real Madrid
+65d2f5bcc0c736a4f7d140bb,0,Elche,797,877977,4,Villarreal,533,Villarreal
+65d2f5bcc0c736a4f7d140bc,1,Getafe,546,877978,5,Valencia,532,Valencia
+65d2f5bcc0c736a4f7d140bd,0,Cadiz,724,877979,3,Celta Vigo,538,Celta Vigo
+65d2f5bcc0c736a4f7d140be,0,Almeria,723,877980,1,Valladolid,720,Valladolid
+65d2f5bcc0c736a4f7d140bf,1,Girona,547,877981,1,Mallorca,798,Tie
+65d2f5bcc0c736a4f7d140c0,1,Celta Vigo,538,877982,4,Atletico Madrid,530,Atletico Madrid
+65d2f5bcc0c736a4f7d140c1,0,Villarreal,533,877983,1,Real Betis,543,Real Betis
+65d2f5bcc0c736a4f7d140c2,1,Real Sociedad,548,877984,2,Getafe,546,Getafe
+65d2f5bcc0c736a4f7d140c3,3,Sevilla,536,877985,2,Espanyol,540,Sevilla
+65d2f5bdc0c736a4f7d140c4,1,Valencia,532,877986,2,Rayo Vallecano,728,Rayo Vallecano
+65d2f5bdc0c736a4f7d140c5,1,Osasuna,727,877987,0,Almeria,723,Osasuna
+65d2f5bdc0c736a4f7d140c6,1,Valladolid,720,877988,2,Girona,547,Girona
+65d2f5bdc0c736a4f7d140c7,4,Athletic Club,531,877989,1,Elche,797,Athletic Club
+65d2f5bdc0c736a4f7d140c8,4,Barcelona,529,877990,0,Cadiz,724,Barcelona
+65d2f5bdc0c736a4f7d140c9,1,Mallorca,798,877991,4,Real Madrid,541,Real Madrid
+65d2f5bdc0c736a4f7d140ca,2,Rayo Vallecano,728,877992,3,Athletic Club,531,Athletic Club
+65d2f5bdc0c736a4f7d140cb,2,Real Madrid,541,877993,1,Atletico Madrid,530,Real Madrid
+65d2f5bdc0c736a4f7d140cc,0,Elche,797,877994,3,Barcelona,529,Barcelona
+65d2f5bdc0c736a4f7d140cd,1,Girona,547,877995,2,Real Betis,543,Real Betis
+65d2f5bdc0c736a4f7d140ce,0,Celta Vigo,538,877996,3,Valencia,532,Valencia
+65d2f5bdc0c736a4f7d140cf,2,Getafe,546,877997,0,Osasuna,727,Getafe
+65d2f5bdc0c736a4f7d140d0,1,Cadiz,724,877998,0,Valladolid,720,Cadiz
+65d2f5bdc0c736a4f7d140d1,1,Espanyol,540,877999,2,Real Sociedad,548,Real Sociedad
+65d2f5bdc0c736a4f7d140d2,1,Sevilla,536,878000,1,Villarreal,533,Tie
+65d2f5bdc0c736a4f7d140d3,0,Almeria,723,878001,1,Mallorca,798,Mallorca
+65d2f5bdc0c736a4f7d140d4,3,Valladolid,720,878002,2,Getafe,546,Valladolid
+65d2f5bec0c736a4f7d140d5,0,Villarreal,533,878003,0,Cadiz,724,Tie
+65d2f5bec0c736a4f7d140d6,2,Valencia,532,878004,2,Espanyol,540,Tie
+65d2f5bec0c736a4f7d140d7,5,Real Sociedad,548,878005,3,Girona,547,Real Sociedad
+65d2f5bec0c736a4f7d140d8,2,Atletico Madrid,530,878006,0,Sevilla,536,Atletico Madrid
+65d2f5bec0c736a4f7d140d9,1,Barcelona,529,878007,0,Mallorca,798,Barcelona
+65d2f5bec0c736a4f7d140da,0,Real Betis,543,878008,1,Celta Vigo,538,Celta Vigo
+65d2f5bec0c736a4f7d140db,1,Elche,797,878009,2,Rayo Vallecano,728,Rayo Vallecano
+65d2f5bec0c736a4f7d140dc,1,Osasuna,727,878010,1,Real Madrid,541,Tie
+65d2f5bec0c736a4f7d140dd,0,Almeria,723,878011,4,Athletic Club,531,Athletic Club
+65d2f5bec0c736a4f7d140de,1,Girona,547,878012,2,Atletico Madrid,530,Atletico Madrid
+65d2f5bec0c736a4f7d140df,0,Celta Vigo,538,878013,1,Barcelona,529,Barcelona
+65d2f5bec0c736a4f7d140e0,1,Mallorca,798,878014,1,Elche,797,Tie
+65d2f5bec0c736a4f7d140e1,1,Real Madrid,541,878015,0,Getafe,546,Real Madrid
+65d2f5bec0c736a4f7d140e2,2,Espanyol,540,878016,2,Cadiz,724,Tie
+65d2f5bec0c736a4f7d140e3,2,Valencia,532,878017,1,Osasuna,727,Valencia
+65d2f5bec0c736a4f7d140e4,0,Villarreal,533,878018,1,Real Sociedad,548,Real Sociedad
+65d2f5bec0c736a4f7d140e5,1,Rayo Vallecano,728,878019,3,Almeria,723,Almeria
+65d2f5bfc0c736a4f7d140e6,1,Athletic Club,531,878020,1,Sevilla,536,Tie
+65d2f5bfc0c736a4f7d140e7,0,Real Betis,543,878021,0,Valladolid,720,Tie
+65d2f5bfc0c736a4f7d140e8,1,Atletico Madrid,530,878022,0,Athletic Club,531,Atletico Madrid
+65d2f5bfc0c736a4f7d140e9,2,Real Sociedad,548,878023,1,Celta Vigo,538,Real Sociedad
+65d2f5bfc0c736a4f7d140ea,1,Sevilla,536,878024,0,Mallorca,798,Sevilla
+65d2f5bfc0c736a4f7d140eb,0,Valladolid,720,878025,1,Espanyol,540,Espanyol
+65d2f5bfc0c736a4f7d140ec,1,Barcelona,529,878026,3,Real Madrid,541,Real Madrid
+65d2f5bfc0c736a4f7d140ed,2,Elche,797,878027,2,Valencia,532,Tie
+65d2f5bfc0c736a4f7d140ee,0,Getafe,546,878028,0,Rayo Vallecano,728,Tie
+65d2f5bfc0c736a4f7d140ef,1,Cadiz,724,878029,1,Girona,547,Tie
+65d2f5bfc0c736a4f7d140f0,0,Osasuna,727,878030,2,Villarreal,533,Villarreal
+65d2f5bfc0c736a4f7d140f1,1,Almeria,723,878031,3,Real Betis,543,Real Betis
+65d2f5bfc0c736a4f7d140f2,1,Rayo Vallecano,728,878032,1,Atletico Madrid,530,Tie
+65d2f5bfc0c736a4f7d140f3,0,Villarreal,533,878033,3,Barcelona,529,Barcelona
+65d2f5bfc0c736a4f7d140f4,3,Real Madrid,541,878034,0,Elche,797,Real Madrid
+65d2f5bfc0c736a4f7d140f5,1,Valencia,532,878035,1,Sevilla,536,Tie
+65d2f5c0c0c736a4f7d140f6,2,Girona,547,878036,3,Almeria,723,Almeria
+65d2f5c0c0c736a4f7d140f7,2,Athletic Club,531,878037,2,Getafe,546,Tie
+65d2f5c0c0c736a4f7d140f8,0,Real Betis,543,878038,0,Cadiz,724,Tie
+65d2f5c0c0c736a4f7d140f9,1,Celta Vigo,538,878039,4,Valladolid,720,Valladolid
+65d2f5c0c0c736a4f7d140fa,0,Mallorca,798,878040,1,Real Sociedad,548,Real Sociedad
+65d2f5c0c0c736a4f7d140fb,0,Espanyol,540,878041,1,Osasuna,727,Osasuna
+65d2f5c0c0c736a4f7d140fc,1,Getafe,546,878042,1,Celta Vigo,538,Tie
+65d2f5c0c0c736a4f7d140fd,1,Sevilla,536,878043,3,Real Madrid,541,Real Madrid
+65d2f5c0c0c736a4f7d140fe,1,Osasuna,727,878044,1,Girona,547,Tie
+65d2f5c0c0c736a4f7d140ff,0,Athletic Club,531,878045,4,Barcelona,529,Barcelona
+65d2f5c0c0c736a4f7d14100,2,Atletico Madrid,530,878046,1,Real Betis,543,Atletico Madrid
+65d2f5c0c0c736a4f7d14101,2,Elche,797,878047,2,Espanyol,540,Tie
+65d2f5c0c0c736a4f7d14102,2,Mallorca,798,878048,1,Valencia,532,Mallorca
+65d2f5c0c0c736a4f7d14103,1,Cadiz,724,878049,5,Rayo Vallecano,728,Rayo Vallecano
+65d2f5c0c0c736a4f7d14104,0,Real Sociedad,548,878050,1,Valladolid,720,Valladolid
+65d2f5c0c0c736a4f7d14105,1,Almeria,723,878051,2,Villarreal,533,Villarreal
+65d2f5c0c0c736a4f7d14106,0,Villarreal,533,878052,1,Athletic Club,531,Athletic Club
+65d2f5c0c0c736a4f7d14107,1,Getafe,546,878053,0,Elche,797,Getafe
+65d2f5c1c0c736a4f7d14108,0,Valladolid,720,878054,2,Osasuna,727,Osasuna
+65d2f5c1c0c736a4f7d14109,1,Celta Vigo,538,878055,3,Almeria,723,Almeria
+65d2f5c1c0c736a4f7d1410a,2,Atletico Madrid,530,878056,3,Cadiz,724,Cadiz
+65d2f5c1c0c736a4f7d1410b,1,Barcelona,529,878057,0,Valencia,532,Barcelona
+65d2f5c1c0c736a4f7d1410c,2,Real Betis,543,878058,0,Real Sociedad,548,Real Betis
+65d2f5c1c0c736a4f7d1410d,1,Espanyol,540,878059,1,Mallorca,798,Tie
+65d2f5c1c0c736a4f7d1410e,1,Rayo Vallecano,728,878060,0,Sevilla,536,Rayo Vallecano
+65d2f5c1c0c736a4f7d1410f,1,Girona,547,878061,1,Real Madrid,541,Tie
+65d2f5c1c0c736a4f7d14110,1,Espanyol,540,878062,1,Atletico Madrid,530,Tie
+65d2f5c1c0c736a4f7d14111,1,Sevilla,536,878063,1,Real Betis,543,Tie
+65d2f5c1c0c736a4f7d14112,2,Osasuna,727,878064,1,Celta Vigo,538,Osasuna
+65d2f5c1c0c736a4f7d14113,1,Valencia,532,878065,1,Real Sociedad,548,Tie
+65d2f5c1c0c736a4f7d14114,2,Real Madrid,541,878066,3,Rayo Vallecano,728,Rayo Vallecano
+65d2f5c1c0c736a4f7d14115,1,Athletic Club,531,878067,2,Girona,547,Girona
+65d2f5c1c0c736a4f7d14116,1,Elche,797,878068,2,Valladolid,720,Valladolid
+65d2f5c1c0c736a4f7d14117,2,Mallorca,798,878069,0,Villarreal,533,Mallorca
+65d2f5c2c0c736a4f7d14118,0,Cadiz,724,878070,0,Getafe,546,Tie
+65d2f5c2c0c736a4f7d14119,0,Almeria,723,878071,2,Barcelona,529,Barcelona
+65d2f5c2c0c736a4f7d1411a,0,Valladolid,720,878072,3,Athletic Club,531,Athletic Club
+65d2f5c2c0c736a4f7d1411b,2,Girona,547,878073,1,Elche,797,Girona
+65d2f5c2c0c736a4f7d1411c,1,Villarreal,533,878074,0,Espanyol,540,Villarreal
+65d2f5c2c0c736a4f7d1411d,0,Getafe,546,878075,1,Almeria,723,Almeria
+65d2f5c2c0c736a4f7d1411e,0,Atletico Madrid,530,878076,1,Mallorca,798,Mallorca
+65d2f5c2c0c736a4f7d1411f,2,Barcelona,529,878077,1,Osasuna,727,Barcelona
+65d2f5c2c0c736a4f7d14120,0,Real Betis,543,878078,3,Valencia,532,Valencia
+65d2f5c2c0c736a4f7d14121,0,Celta Vigo,538,878079,0,Rayo Vallecano,728,Tie
+65d2f5c2c0c736a4f7d14122,1,Cadiz,724,878080,2,Real Madrid,541,Real Madrid
+65d2f5c2c0c736a4f7d14123,2,Real Sociedad,548,878081,1,Sevilla,536,Real Sociedad
+65d2f5c2c0c736a4f7d14124,0,Elche,797,878082,2,Atletico Madrid,530,Atletico Madrid
+65d2f5c2c0c736a4f7d14125,1,Espanyol,540,878083,1,Barcelona,529,Tie
+65d2f5c2c0c736a4f7d14126,1,Sevilla,536,878084,1,Celta Vigo,538,Tie
+65d2f5c2c0c736a4f7d14127,0,Mallorca,798,878085,2,Getafe,546,Getafe
+65d2f5c2c0c736a4f7d14128,2,Rayo Vallecano,728,878086,2,Girona,547,Tie
+65d2f5c3c0c736a4f7d14129,0,Athletic Club,531,878087,0,Real Betis,543,Tie
+65d2f5c3c0c736a4f7d1412a,0,Osasuna,727,878088,2,Real Sociedad,548,Real Sociedad
+65d2f5c3c0c736a4f7d1412b,2,Real Madrid,541,878089,0,Valladolid,720,Real Madrid
+65d2f5c3c0c736a4f7d1412c,1,Valencia,532,878090,2,Villarreal,533,Villarreal
+65d2f5c3c0c736a4f7d1412d,1,Almeria,723,878091,1,Cadiz,724,Tie
+65d2f5c3c0c736a4f7d1412e,0,Osasuna,727,878092,0,Athletic Club,531,Tie
+65d2f5c3c0c736a4f7d1412f,1,Barcelona,529,878093,0,Atletico Madrid,530,Barcelona
+65d2f5c3c0c736a4f7d14130,0,Valladolid,720,878094,1,Mallorca,798,Mallorca
+65d2f5c3c0c736a4f7d14131,2,Girona,547,878095,2,Espanyol,540,Tie
+65d2f5c3c0c736a4f7d14132,2,Real Sociedad,548,878096,0,Almeria,723,Real Sociedad
+65d2f5c3c0c736a4f7d14133,2,Real Betis,543,878097,1,Rayo Vallecano,728,Real Betis
+65d2f5c3c0c736a4f7d14134,1,Celta Vigo,538,878098,0,Elche,797,Celta Vigo
+65d2f5c3c0c736a4f7d14135,1,Getafe,546,878099,2,Sevilla,536,Sevilla
+65d2f5c3c0c736a4f7d14136,1,Cadiz,724,878100,0,Valencia,532,Cadiz
+65d2f5c3c0c736a4f7d14137,1,Real Madrid,541,878101,2,Villarreal,533,Villarreal
+65d2f5c3c0c736a4f7d14138,1,Villarreal,533,878102,1,Celta Vigo,538,Tie
+65d2f5c3c0c736a4f7d14139,1,Elche,797,878103,1,Cadiz,724,Tie
+65d2f5c4c0c736a4f7d1413a,0,Valencia,532,878104,2,Real Madrid,541,Real Madrid
+65d2f5c4c0c736a4f7d1413b,1,Atletico Madrid,530,878105,1,Almeria,723,Tie
+65d2f5c4c0c736a4f7d1413c,1,Sevilla,536,878106,2,Girona,547,Girona
+65d2f5c4c0c736a4f7d1413d,1,Athletic Club,531,878107,3,Real Sociedad,548,Real Sociedad
+65d2f5c4c0c736a4f7d1413e,2,Barcelona,529,878108,1,Real Betis,543,Barcelona
+65d2f5c4c0c736a4f7d1413f,0,Mallorca,798,878109,1,Osasuna,727,Osasuna
+65d2f5c4c0c736a4f7d14140,2,Espanyol,540,878110,1,Getafe,546,Espanyol
+65d2f5c4c0c736a4f7d14141,1,Rayo Vallecano,728,878111,0,Valladolid,720,Rayo Vallecano
+65d2f5c4c0c736a4f7d14142,2,Real Madrid,541,878112,0,Athletic Club,531,Real Madrid
+65d2f5c4c0c736a4f7d14143,0,Valladolid,720,878113,3,Atletico Madrid,530,Atletico Madrid
+65d2f5c4c0c736a4f7d14144,0,Getafe,546,878114,1,Barcelona,529,Barcelona
+65d2f5c4c0c736a4f7d14145,1,Osasuna,727,878115,1,Elche,797,Tie
+65d2f5c4c0c736a4f7d14146,2,Real Sociedad,548,878116,0,Rayo Vallecano,728,Real Sociedad
+65d2f5c4c0c736a4f7d14147,0,Real Betis,543,878117,1,Espanyol,540,Espanyol
+65d2f5c4c0c736a4f7d14148,0,Celta Vigo,538,878118,1,Mallorca,798,Mallorca
+65d2f5c4c0c736a4f7d14149,0,Cadiz,724,878119,1,Sevilla,536,Sevilla
+65d2f5c4c0c736a4f7d1414a,2,Almeria,723,878120,2,Valencia,532,Tie
+65d2f5c5c0c736a4f7d1414b,0,Girona,547,878121,1,Villarreal,533,Villarreal
+65d2f5c5c0c736a4f7d1414c,0,Mallorca,798,878122,2,Cadiz,724,Cadiz
+65d2f5c5c0c736a4f7d1414d,0,Real Sociedad,548,878123,0,Real Madrid,541,Tie
+65d2f5c5c0c736a4f7d1414e,1,Espanyol,540,878124,3,Almeria,723,Almeria
+65d2f5c5c0c736a4f7d1414f,0,Athletic Club,531,878125,1,Celta Vigo,538,Celta Vigo
+65d2f5c5c0c736a4f7d14150,1,Atletico Madrid,530,878126,0,Osasuna,727,Atletico Madrid
+65d2f5c5c0c736a4f7d14151,1,Barcelona,529,878127,0,Girona,547,Barcelona
+65d2f5c5c0c736a4f7d14152,1,Real Betis,543,878128,0,Getafe,546,Real Betis
+65d2f5c5c0c736a4f7d14153,0,Elche,797,878129,3,Sevilla,536,Sevilla
+65d2f5c5c0c736a4f7d14154,0,Valencia,532,878130,1,Valladolid,720,Valladolid
+65d2f5c5c0c736a4f7d14155,1,Rayo Vallecano,728,878131,0,Villarreal,533,Rayo Vallecano
+65d2f5c5c0c736a4f7d14156,1,Cadiz,724,878132,4,Athletic Club,531,Athletic Club
+65d2f5c5c0c736a4f7d14157,1,Getafe,546,878133,1,Atletico Madrid,530,Tie
+65d2f5c5c0c736a4f7d14158,0,Sevilla,536,878134,3,Barcelona,529,Barcelona
+65d2f5c5c0c736a4f7d14159,4,Celta Vigo,538,878135,3,Real Betis,543,Celta Vigo
+65d2f5c5c0c736a4f7d1415a,1,Villarreal,533,878136,3,Elche,797,Elche
+65d2f5c5c0c736a4f7d1415b,0,Real Madrid,541,878137,1,Mallorca,798,Mallorca
+65d2f5c6c0c736a4f7d1415c,1,Osasuna,727,878138,1,Espanyol,540,Tie
+65d2f5c6c0c736a4f7d1415d,1,Valladolid,720,878139,0,Real Sociedad,548,Valladolid
+65d2f5c6c0c736a4f7d1415e,0,Valencia,532,878140,1,Girona,547,Girona
+65d2f5c6c0c736a4f7d1415f,0,Almeria,723,878141,2,Rayo Vallecano,728,Rayo Vallecano
+65d2f5c6c0c736a4f7d14160,1,Rayo Vallecano,728,878142,1,Getafe,546,Tie
+65d2f5c6c0c736a4f7d14161,0,Girona,547,878143,2,Cadiz,724,Cadiz
+65d2f5c6c0c736a4f7d14162,3,Real Sociedad,548,878144,2,Espanyol,540,Real Sociedad
+65d2f5c6c0c736a4f7d14163,3,Real Betis,543,878145,2,Almeria,723,Real Betis
+65d2f5c6c0c736a4f7d14164,2,Athletic Club,531,878146,1,Valencia,532,Athletic Club
+65d2f5c6c0c736a4f7d14165,1,Atletico Madrid,530,878147,0,Celta Vigo,538,Atletico Madrid
+65d2f5c6c0c736a4f7d14166,1,Barcelona,529,878148,0,Villarreal,533,Barcelona
+65d2f5c6c0c736a4f7d14167,0,Elche,797,878149,4,Real Madrid,541,Real Madrid
+65d2f5c6c0c736a4f7d14168,0,Mallorca,798,878150,2,Sevilla,536,Sevilla
+65d2f5c6c0c736a4f7d14169,0,Osasuna,727,878151,0,Valladolid,720,Tie
+65d2f5c6c0c736a4f7d1416a,0,Cadiz,724,878152,2,Barcelona,529,Barcelona
+65d2f5c6c0c736a4f7d1416b,1,Valladolid,720,878153,2,Real Betis,543,Real Betis
+65d2f5c6c0c736a4f7d1416c,1,Espanyol,540,878154,0,Elche,797,Espanyol
+65d2f5c7c0c736a4f7d1416d,2,Villarreal,533,878155,4,Mallorca,798,Mallorca
+65d2f5c7c0c736a4f7d1416e,0,Valencia,532,878156,1,Getafe,546,Getafe
+65d2f5c7c0c736a4f7d1416f,2,Real Madrid,541,878157,0,Osasuna,727,Real Madrid
+65d2f5c7c0c736a4f7d14170,1,Sevilla,536,878158,1,Rayo Vallecano,728,Tie
+65d2f5c7c0c736a4f7d14171,0,Athletic Club,531,878159,1,Atletico Madrid,530,Atletico Madrid
+65d2f5c7c0c736a4f7d14172,1,Celta Vigo,538,878160,1,Real Sociedad,548,Tie
+65d2f5c7c0c736a4f7d14173,2,Almeria,723,878161,6,Girona,547,Girona
+65d2f5c7c0c736a4f7d14174,3,Girona,547,878162,2,Athletic Club,531,Girona
+65d2f5c7c0c736a4f7d14175,0,Valladolid,720,878163,3,Celta Vigo,538,Celta Vigo
+65d2f5c7c0c736a4f7d14176,0,Rayo Vallecano,728,878164,1,Cadiz,724,Cadiz
+65d2f5c7c0c736a4f7d14177,1,Mallorca,798,878165,2,Espanyol,540,Espanyol
+65d2f5c7c0c736a4f7d14178,0,Barcelona,529,878166,1,Almeria,723,Almeria
+65d2f5c7c0c736a4f7d14179,1,Atletico Madrid,530,878167,1,Real Madrid,541,Tie
+65d2f5c7c0c736a4f7d1417a,3,Real Betis,543,878168,2,Elche,797,Real Betis
+65d2f5c7c0c736a4f7d1417b,1,Getafe,546,878169,2,Villarreal,533,Villarreal
+65d2f5c7c0c736a4f7d1417c,3,Osasuna,727,878170,2,Sevilla,536,Osasuna
+65d2f5c8c0c736a4f7d1417d,0,Real Sociedad,548,878171,1,Valencia,532,Valencia
+65d2f5c8c0c736a4f7d1417e,1,Sevilla,536,878172,6,Atletico Madrid,530,Atletico Madrid
+65d2f5c8c0c736a4f7d1417f,0,Valencia,532,878173,1,Barcelona,529,Barcelona
+65d2f5c8c0c736a4f7d14180,0,Real Madrid,541,878174,0,Real Betis,543,Tie
+65d2f5c8c0c736a4f7d14181,2,Girona,547,878175,3,Getafe,546,Getafe
+65d2f5c8c0c736a4f7d14182,2,Villarreal,533,878176,0,Almeria,723,Villarreal
+65d2f5c8c0c736a4f7d14183,0,Athletic Club,531,878177,0,Rayo Vallecano,728,Tie
+65d2f5c8c0c736a4f7d14184,0,Celta Vigo,538,878178,0,Osasuna,727,Tie
+65d2f5c8c0c736a4f7d14185,1,Elche,797,878179,0,Mallorca,798,Elche
+65d2f5c8c0c736a4f7d14186,0,Cadiz,724,878180,0,Real Sociedad,548,Tie
+65d2f5c8c0c736a4f7d14187,1,Espanyol,540,878181,2,Valladolid,720,Valladolid
+65d2f5c8c0c736a4f7d14188,1,Barcelona,529,878182,0,Athletic Club,531,Barcelona
+65d2f5c8c0c736a4f7d14189,0,Rayo Vallecano,728,878183,3,Celta Vigo,538,Celta Vigo
+65d2f5c8c0c736a4f7d1418a,1,Valladolid,720,878184,1,Elche,797,Tie
+65d2f5c8c0c736a4f7d1418b,1,Real Sociedad,548,878185,1,Mallorca,798,Tie
+65d2f5c9c0c736a4f7d1418c,2,Getafe,546,878186,2,Cadiz,724,Tie
+65d2f5c9c0c736a4f7d1418d,1,Atletico Madrid,530,878187,0,Girona,547,Atletico Madrid
+65d2f5c9c0c736a4f7d1418e,1,Real Betis,543,878188,1,Villarreal,533,Tie
+65d2f5c9c0c736a4f7d1418f,1,Espanyol,540,878189,3,Real Madrid,541,Real Madrid
+65d2f5c9c0c736a4f7d14190,0,Osasuna,727,878190,1,Valencia,532,Valencia
+65d2f5c9c0c736a4f7d14191,1,Almeria,723,878191,2,Sevilla,536,Sevilla
+65d2f5c9c0c736a4f7d14192,0,Valencia,532,878192,3,Atletico Madrid,530,Atletico Madrid
+65d2f5c9c0c736a4f7d14193,1,Real Madrid,541,878193,2,Barcelona,529,Barcelona
+65d2f5c9c0c736a4f7d14194,0,Mallorca,798,878194,1,Real Betis,543,Real Betis
+65d2f5c9c0c736a4f7d14195,0,Sevilla,536,878195,2,Getafe,546,Getafe
+65d2f5c9c0c736a4f7d14196,3,Villarreal,533,878196,0,Osasuna,727,Villarreal
+65d2f5c9c0c736a4f7d14197,1,Cadiz,724,878197,1,Almeria,723,Tie
+65d2f5c9c0c736a4f7d14198,3,Athletic Club,531,878198,1,Valladolid,720,Athletic Club
+65d2f5c9c0c736a4f7d14199,3,Celta Vigo,538,878199,1,Espanyol,540,Celta Vigo
+65d2f5c9c0c736a4f7d1419a,0,Elche,797,878200,2,Real Sociedad,548,Real Sociedad
+65d2f5c9c0c736a4f7d1419b,2,Girona,547,878201,2,Rayo Vallecano,728,Tie
+65d2f5cac0c736a4f7d1419c,0,Getafe,546,878202,0,Athletic Club,531,Tie
+65d2f5cac0c736a4f7d1419d,0,Real Betis,543,878203,1,Atletico Madrid,530,Atletico Madrid
+65d2f5cac0c736a4f7d1419e,0,Osasuna,727,878204,0,Mallorca,798,Tie
+65d2f5cac0c736a4f7d1419f,2,Sevilla,536,878205,0,Cadiz,724,Sevilla
+65d2f5cac0c736a4f7d141a0,0,Valladolid,720,878206,6,Real Madrid,541,Real Madrid
+65d2f5cac0c736a4f7d141a1,4,Barcelona,529,878207,0,Elche,797,Barcelona
+65d2f5cac0c736a4f7d141a2,1,Espanyol,540,878208,2,Girona,547,Girona
+65d2f5cac0c736a4f7d141a3,0,Real Sociedad,548,878209,2,Villarreal,533,Villarreal
+65d2f5cac0c736a4f7d141a4,1,Rayo Vallecano,728,878210,1,Valencia,532,Tie
+65d2f5cac0c736a4f7d141a5,2,Almeria,723,878211,2,Celta Vigo,538,Tie
+65d2f5cac0c736a4f7d141a6,0,Girona,547,878212,0,Barcelona,529,Tie
+65d2f5cac0c736a4f7d141a7,2,Cadiz,724,878213,0,Real Betis,543,Cadiz
+65d2f5cac0c736a4f7d141a8,3,Villarreal,533,878214,2,Real Madrid,541,Villarreal
+65d2f5cac0c736a4f7d141a9,1,Valencia,532,878215,2,Almeria,723,Almeria
+65d2f5cac0c736a4f7d141aa,2,Athletic Club,531,878216,1,Espanyol,540,Athletic Club
+65d2f5cbc0c736a4f7d141ab,2,Atletico Madrid,530,878217,1,Rayo Vallecano,728,Atletico Madrid
+65d2f5cbc0c736a4f7d141ac,2,Celta Vigo,538,878218,2,Sevilla,536,Tie
+65d2f5cbc0c736a4f7d141ad,1,Elche,797,878219,2,Osasuna,727,Osasuna
+65d2f5cbc0c736a4f7d141ae,3,Mallorca,798,878220,3,Valladolid,720,Tie
+65d2f5cbc0c736a4f7d141af,0,Getafe,546,878221,2,Real Sociedad,548,Real Sociedad
+65d2f5cbc0c736a4f7d141b0,0,Real Sociedad,548,878222,2,Athletic Club,531,Athletic Club
+65d2f5cbc0c736a4f7d141b1,1,Espanyol,540,878223,3,Real Betis,543,Real Betis
+65d2f5cbc0c736a4f7d141b2,1,Mallorca,798,878224,0,Celta Vigo,538,Mallorca
+65d2f5cbc0c736a4f7d141b3,2,Real Madrid,541,878225,0,Cadiz,724,Real Madrid
+65d2f5cbc0c736a4f7d141b4,2,Valladolid,720,878226,1,Villarreal,533,Valladolid
+65d2f5cbc0c736a4f7d141b5,0,Barcelona,529,878227,0,Getafe,546,Tie
+65d2f5cbc0c736a4f7d141b6,0,Elche,797,878228,2,Girona,547,Girona
+65d2f5cbc0c736a4f7d141b7,1,Osasuna,727,878229,2,Rayo Vallecano,728,Rayo Vallecano
+65d2f5cbc0c736a4f7d141b8,2,Sevilla,536,878230,0,Valencia,532,Sevilla
+65d2f5cbc0c736a4f7d141b9,1,Almeria,723,878231,2,Atletico Madrid,530,Atletico Madrid
+65d2f5cbc0c736a4f7d141ba,2,Valencia,532,878232,0,Elche,797,Valencia
+65d2f5cbc0c736a4f7d141bb,1,Villarreal,533,878233,2,Sevilla,536,Sevilla
+65d2f5cbc0c736a4f7d141bc,2,Athletic Club,531,878234,1,Almeria,723,Athletic Club
+65d2f5ccc0c736a4f7d141bd,0,Atletico Madrid,530,878235,1,Barcelona,529,Barcelona
+65d2f5ccc0c736a4f7d141be,2,Real Betis,543,878236,3,Osasuna,727,Osasuna
+65d2f5ccc0c736a4f7d141bf,0,Celta Vigo,538,878237,2,Real Madrid,541,Real Madrid
+65d2f5ccc0c736a4f7d141c0,1,Getafe,546,878238,3,Mallorca,798,Mallorca
+65d2f5ccc0c736a4f7d141c1,0,Cadiz,724,878239,0,Espanyol,540,Tie
+65d2f5ccc0c736a4f7d141c2,1,Rayo Vallecano,728,878240,2,Real Sociedad,548,Real Sociedad
+65d2f5ccc0c736a4f7d141c3,0,Girona,547,878241,1,Valladolid,720,Valladolid
+65d2f5ccc0c736a4f7d141c4,1,Sevilla,536,878242,0,Athletic Club,531,Sevilla
+65d2f5ccc0c736a4f7d141c5,1,Mallorca,798,878243,3,Atletico Madrid,530,Atletico Madrid
+65d2f5ccc0c736a4f7d141c6,0,Real Sociedad,548,878244,0,Real Betis,543,Tie
+65d2f5ccc0c736a4f7d141c7,0,Elche,797,878245,1,Celta Vigo,538,Celta Vigo
+65d2f5ccc0c736a4f7d141c8,1,Osasuna,727,878246,0,Cadiz,724,Osasuna
+65d2f5ccc0c736a4f7d141c9,1,Valladolid,720,878247,2,Valencia,532,Valencia
+65d2f5ccc0c736a4f7d141ca,2,Real Madrid,541,878248,4,Girona,547,Girona
+65d2f5ccc0c736a4f7d141cb,1,Barcelona,529,878249,2,Rayo Vallecano,728,Rayo Vallecano
+65d2f5cdc0c736a4f7d141cc,2,Espanyol,540,878250,4,Villarreal,533,Villarreal
+65d2f5cdc0c736a4f7d141cd,2,Almeria,723,878251,1,Getafe,546,Almeria
+65d2f5cdc0c736a4f7d141ce,0,Real Betis,543,878252,4,Barcelona,529,Barcelona
+65d2f5cdc0c736a4f7d141cf,0,Rayo Vallecano,728,878253,4,Elche,797,Elche
+65d2f5cdc0c736a4f7d141d0,1,Valencia,532,878254,2,Cadiz,724,Cadiz
+65d2f5cdc0c736a4f7d141d1,0,Getafe,546,878255,1,Espanyol,540,Espanyol
+65d2f5cdc0c736a4f7d141d2,2,Real Sociedad,548,878256,0,Osasuna,727,Real Sociedad
+65d2f5cdc0c736a4f7d141d3,1,Athletic Club,531,878257,1,Mallorca,798,Tie
+65d2f5cdc0c736a4f7d141d4,5,Atletico Madrid,530,878258,2,Valladolid,720,Atletico Madrid
+65d2f5cdc0c736a4f7d141d5,1,Celta Vigo,538,878259,3,Villarreal,533,Villarreal
+65d2f5cdc0c736a4f7d141d6,2,Almeria,723,878260,4,Real Madrid,541,Real Madrid
+65d2f5cdc0c736a4f7d141d7,2,Girona,547,878261,0,Sevilla,536,Girona
+65d2f5cdc0c736a4f7d141d8,1,Real Betis,543,878262,0,Athletic Club,531,Real Betis
+65d2f5cdc0c736a4f7d141d9,1,Cadiz,724,878263,5,Atletico Madrid,530,Atletico Madrid
+65d2f5cdc0c736a4f7d141da,0,Osasuna,727,878264,1,Barcelona,529,Barcelona
+65d2f5cdc0c736a4f7d141db,1,Villarreal,533,878265,1,Valencia,532,Tie
+65d2f5cec0c736a4f7d141dc,1,Valladolid,720,878266,2,Rayo Vallecano,728,Rayo Vallecano
+65d2f5cec0c736a4f7d141dd,1,Elche,797,878267,2,Almeria,723,Almeria
+65d2f5cec0c736a4f7d141de,1,Mallorca,798,878268,2,Girona,547,Girona
+65d2f5cec0c736a4f7d141df,0,Celta Vigo,538,878269,1,Getafe,546,Getafe
+65d2f5cec0c736a4f7d141e0,2,Espanyol,540,878270,3,Sevilla,536,Sevilla
+65d2f5cec0c736a4f7d141e1,0,Real Madrid,541,878271,2,Real Sociedad,548,Real Sociedad
+65d2f5cec0c736a4f7d141e2,1,Rayo Vallecano,728,878272,3,Real Betis,543,Real Betis
+65d2f5cec0c736a4f7d141e3,2,Valencia,532,878273,1,Celta Vigo,538,Valencia
+65d2f5cec0c736a4f7d141e4,1,Athletic Club,531,878274,5,Villarreal,533,Villarreal
+65d2f5cec0c736a4f7d141e5,0,Atletico Madrid,530,878275,1,Elche,797,Elche
+65d2f5cec0c736a4f7d141e6,4,Barcelona,529,878276,2,Espanyol,540,Barcelona
+65d2f5cec0c736a4f7d141e7,0,Getafe,546,878277,1,Real Madrid,541,Real Madrid
+65d2f5cec0c736a4f7d141e8,0,Cadiz,724,878278,1,Mallorca,798,Mallorca
+65d2f5cec0c736a4f7d141e9,3,Sevilla,536,878279,0,Valladolid,720,Sevilla
+65d2f5cec0c736a4f7d141ea,1,Almeria,723,878280,3,Osasuna,727,Osasuna
+65d2f5cec0c736a4f7d141eb,2,Girona,547,878281,2,Real Sociedad,548,Tie
+65d2f5cec0c736a4f7d141ec,1,Celta Vigo,538,878282,2,Athletic Club,531,Athletic Club
+65d2f5cfc0c736a4f7d141ed,0,Osasuna,727,878283,3,Atletico Madrid,530,Atletico Madrid
+65d2f5cfc0c736a4f7d141ee,2,Real Sociedad,548,878284,1,Barcelona,529,Real Sociedad
+65d2f5cfc0c736a4f7d141ef,0,Valladolid,720,878285,2,Cadiz,724,Cadiz
+65d2f5cfc0c736a4f7d141f0,0,Mallorca,798,878286,3,Almeria,723,Almeria
+65d2f5cfc0c736a4f7d141f1,2,Villarreal,533,878287,1,Girona,547,Villarreal
+65d2f5cfc0c736a4f7d141f2,0,Real Betis,543,878288,0,Sevilla,536,Tie
+65d2f5cfc0c736a4f7d141f3,1,Elche,797,878289,1,Getafe,546,Tie
+65d2f5cfc0c736a4f7d141f4,2,Espanyol,540,878290,1,Rayo Vallecano,728,Espanyol
+65d2f5cfc0c736a4f7d141f5,0,Real Madrid,541,878291,1,Valencia,532,Valencia
+65d2f5cfc0c736a4f7d141f6,1,Getafe,546,878292,0,Real Betis,543,Getafe
+65d2f5cfc0c736a4f7d141f7,1,Girona,547,878293,1,Celta Vigo,538,Tie
+65d2f5cfc0c736a4f7d141f8,1,Sevilla,536,878294,1,Elche,797,Tie
+65d2f5cfc0c736a4f7d141f9,0,Valencia,532,878295,1,Mallorca,798,Mallorca
+65d2f5cfc0c736a4f7d141fa,0,Athletic Club,531,878296,2,Osasuna,727,Osasuna
+65d2f5cfc0c736a4f7d141fb,3,Atletico Madrid,530,878297,3,Espanyol,540,Tie
+65d2f5cfc0c736a4f7d141fc,1,Barcelona,529,878298,3,Valladolid,720,Valladolid
+65d2f5cfc0c736a4f7d141fd,0,Cadiz,724,878299,2,Villarreal,533,Villarreal
+65d2f5d0c0c736a4f7d141fe,1,Rayo Vallecano,728,878300,2,Real Madrid,541,Real Madrid
+65d2f5d0c0c736a4f7d141ff,0,Almeria,723,878301,1,Real Sociedad,548,Real Sociedad
+65d2f5d0c0c736a4f7d14200,1,Elche,797,878302,0,Athletic Club,531,Elche
+65d2f5d0c0c736a4f7d14201,1,Real Sociedad,548,878303,2,Atletico Madrid,530,Atletico Madrid
+65d2f5d0c0c736a4f7d14202,0,Mallorca,798,878304,3,Barcelona,529,Barcelona
+65d2f5d0c0c736a4f7d14203,1,Osasuna,727,878305,2,Getafe,546,Getafe
+65d2f5d0c0c736a4f7d14204,0,Celta Vigo,538,878306,1,Cadiz,724,Cadiz
+65d2f5d0c0c736a4f7d14205,1,Villarreal,533,878307,2,Rayo Vallecano,728,Rayo Vallecano
+65d2f5d0c0c736a4f7d14206,0,Valladolid,720,878308,0,Almeria,723,Tie
+65d2f5d0c0c736a4f7d14207,2,Real Betis,543,878309,1,Girona,547,Real Betis
+65d2f5d0c0c736a4f7d14208,2,Espanyol,540,878310,2,Valencia,532,Tie
+65d2f5d0c0c736a4f7d14209,2,Real Madrid,541,878311,1,Sevilla,536,Real Madrid
+65d2f5d0c0c736a4f7d1420a,1,Valencia,532,878312,1,Real Betis,543,Tie
+65d2f5d0c0c736a4f7d1420b,0,Rayo Vallecano,728,878313,3,Mallorca,798,Mallorca
+65d2f5d0c0c736a4f7d1420c,1,Sevilla,536,878314,2,Real Sociedad,548,Real Sociedad
+65d2f5d0c0c736a4f7d1420d,1,Athletic Club,531,878315,1,Real Madrid,541,Tie
+65d2f5d0c0c736a4f7d1420e,2,Atletico Madrid,530,878316,2,Villarreal,533,Tie
+65d2f5d1c0c736a4f7d1420f,1,Barcelona,529,878317,2,Celta Vigo,538,Celta Vigo
+65d2f5d1c0c736a4f7d14210,0,Getafe,546,878318,0,Valladolid,720,Tie
+65d2f5d1c0c736a4f7d14211,1,Cadiz,724,878319,1,Elche,797,Tie
+65d2f5d1c0c736a4f7d14212,3,Almeria,723,878320,3,Espanyol,540,Tie
+65d2f5d1c0c736a4f7d14213,1,Girona,547,878321,2,Osasuna,727,Osasuna

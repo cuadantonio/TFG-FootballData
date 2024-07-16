@@ -1,0 +1,21 @@
+_id,awayCleanSheets,awayFailedToScore,awayGoalsAgainst,awayGoalsAgainstAverage,awayGoalsFor,awayGoalsForAverage,homeCleanSheets,homeFailedToScore,homeGoalsAgainst,homeGoalsAgainstAverage,homeGoalsFor,homeGoalsForAverage,id,logo,missedPenalties,missedPenaltiesPercentage,name,scoredPenalties,scoredPenaltiesPercentage,totalDraws,totalGoalsAgainst,totalGoalsAgainstAverage,totalGoalsFor,totalGoalsForAverage,totalLoses,totalRedCards,totalWins,totalYellowCards
+645266808950059810cea965,2,5,29,1.5,23,1.2,2,3,26,1.4,35,1.8,547,https://media.api-sports.io/football/teams/547.png,0,0%,Girona,8,100.00%,10,55,1.4,58,1.5,15,2,13,92
+645266d52e1b2ba6bfe322a6,5,2,29,1.5,23,1.2,4,5,25,1.3,24,1.3,536,https://media.api-sports.io/football/teams/536.png,0,0%,Sevilla,4,100.00%,10,54,1.4,47,1.2,15,11,13,119
+645265f8b68f3ed4bacc3df2,3,6,28,1.5,25,1.3,8,10,15,0.8,22,1.2,531,https://media.api-sports.io/football/teams/531.png,0,0%,Athletic Club,5,100.00%,9,43,1.1,47,1.2,15,5,14,82
+6452662b5e186adc1128c7ce,10,2,16,0.8,33,1.7,16,2,4,0.2,37,1.9,529,https://media.api-sports.io/football/teams/529.png,0,0%,Barcelona,0,0%,4,20,0.5,70,1.8,6,5,28,82
+64526637d7f2e9282e888aab,6,8,23,1.2,20,1.1,7,5,18,0.9,26,1.4,543,https://media.api-sports.io/football/teams/543.png,0,0%,Real Betis,8,100.00%,9,41,1.1,46,1.2,12,14,17,83
+64526668ea68668826452fd7,2,1,34,1.8,25,1.3,4,3,35,1.8,27,1.4,540,https://media.api-sports.io/football/teams/540.png,0,0%,Espanyol,5,100.00%,13,69,1.8,52,1.4,17,10,8,98
+64526673c8788211f4b9579d,6,8,25,1.3,13,0.7,7,6,20,1.1,21,1.1,546,https://media.api-sports.io/football/teams/546.png,0,0%,Getafe,5,100.00%,12,45,1.2,34,0.9,16,9,10,125
+645266bf330dd9db3f253940,7,4,20,1.1,31,1.6,6,1,16,0.8,44,2.3,541,https://media.api-sports.io/football/teams/541.png,0,0%,Real Madrid,9,100.00%,6,36,0.9,75,2,8,3,24,71
+645265ce30e0dc786ac32bbd,0,6,43,2.3,20,1.1,4,4,22,1.2,29,1.5,723,https://media.api-sports.io/football/teams/723.png,0,0%,Almeria,2,100.00%,8,65,1.7,49,1.3,19,3,11,95
+6452665103c3238920d4ead7,4,8,32,1.7,17,0.9,6,2,21,1.1,26,1.4,538,https://media.api-sports.io/football/teams/538.png,0,0%,Celta Vigo,2,100.00%,10,53,1.4,43,1.1,17,6,11,85
+645266f78c58efd45194dff1,7,6,22,1.2,23,1.2,5,3,18,0.9,36,1.9,533,https://media.api-sports.io/football/teams/533.png,0,0%,Villarreal,4,100.00%,7,40,1.1,59,1.6,12,3,19,90
+645266c9e10b223cc83035d5,7,6,19,1,25,1.3,8,3,16,0.8,26,1.4,548,https://media.api-sports.io/football/teams/548.png,0,0%,Real Sociedad,2,100.00%,8,35,0.9,51,1.3,9,2,21,90
+645266df873be9e9caa3b13e,1,8,26,1.4,15,0.8,6,4,19,1,27,1.4,532,https://media.api-sports.io/football/teams/532.png,0,0%,Valencia,5,100.00%,9,45,1.2,42,1.1,18,7,11,88
+6452669b456b29f99e50ed57,4,9,31,1.6,15,0.8,9,4,12,0.6,22,1.2,798,https://media.api-sports.io/football/teams/798.png,0,0%,Mallorca,4,100.00%,8,43,1.1,37,1,16,3,14,117
+645266a735de772fb110723c,5,9,21,1.1,13,0.7,6,6,21,1.1,24,1.3,727,https://media.api-sports.io/football/teams/727.png,0,0%,Osasuna,4,100.00%,8,42,1.1,37,1,15,7,15,93
+6452661576461689ccb32a70,7,3,18,0.9,29,1.5,6,2,15,0.8,41,2.2,530,https://media.api-sports.io/football/teams/530.png,0,0%,Atletico Madrid,1,100.00%,8,33,0.9,70,1.8,7,8,23,90
+64526643282dcc2fb28baf6f,6,9,30,1.6,11,0.6,7,8,23,1.2,19,1,724,https://media.api-sports.io/football/teams/724.png,0,0%,Cadiz,4,100.00%,12,53,1.4,30,0.8,16,7,10,112
+645266b4b2aaf26445dc96b2,5,5,31,1.6,17,0.9,4,5,22,1.2,28,1.5,728,https://media.api-sports.io/football/teams/728.png,0,0%,Rayo Vallecano,4,100.00%,10,53,1.4,45,1.2,15,5,13,89
+6452665db1fb4a1069b05841,2,9,38,2,12,0.6,2,7,29,1.5,18,0.9,797,https://media.api-sports.io/football/teams/797.png,0,0%,Elche,4,100.00%,10,67,1.8,30,0.8,23,11,5,98
+64526690a9cbac138f7e3e35,2,10,38,2,12,0.6,7,8,25,1.3,21,1.1,720,https://media.api-sports.io/football/teams/720.png,0,0%,Valladolid,3,100.00%,7,63,1.7,33,0.9,20,5,11,91

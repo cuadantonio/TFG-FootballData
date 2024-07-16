@@ -1,0 +1,26 @@
+_id,biwengerFound,date,name,points,price,team
+65d2fc1ff32d5d68e9caf282,true,21/03/1991,Griezmann,141,21.530.000 €,Atletico Madrid
+65d2fc20f32d5d68e9caf283,true,23/10/1992,Morata,112,11.670.000 €,Atletico Madrid
+65d2fc21f32d5d68e9caf284,false,23/12/1999,Samuel Lino,100,8.560.000 €,Atletico Madrid
+65d2fc21f32d5d68e9caf285,true,30/01/1995,Llorente,94,5.580.000 €,Atletico Madrid
+65d2fc23f32d5d68e9caf286,true,08/01/1992,Koke,90,4.250.000 €,Atletico Madrid
+65d2fc25f32d5d68e9caf287,true,24/05/1994,Rodrigo de Paul,88,8.320.000 €,Atletico Madrid
+65d2fc26f32d5d68e9caf288,true,07/01/1993,Oblak,82,3.900.000 €,Atletico Madrid
+65d2fc27f32d5d68e9caf289,true,18/06/1995,Hermoso,74,4.090.000 €,Atletico Madrid
+65d2fc28f32d5d68e9caf28a,true,12/01/1989,Axel Witsel,68,3.240.000 €,Atletico Madrid
+65d2fc29f32d5d68e9caf28b,true,09/03/1995,Angel Correa,68,1.790.000 €,Atletico Madrid
+65d2fc2bf32d5d68e9caf28c,true,15/06/2003,Pablo Barrios,66,3.800.000 €,Atletico Madrid
+65d2fc2cf32d5d68e9caf28d,true,13/02/1994,Memphis Depay,61,4.590.000 €,Atletico Madrid
+65d2fc2cf32d5d68e9caf28e,false,02/04/2000,Rodrigo Riquelme,56,2.970.000 €,Atletico Madrid
+65d2fc2df32d5d68e9caf28f,false,26/11/1990,Gabriel Paulista,53,1.680.000 €,Atletico Madrid
+65d2fc2ff32d5d68e9caf290,false,00/00/0000,Simeone,51,2.960.000 €,Atletico Madrid
+65d2fc30f32d5d68e9caf291,true,06/04/1998,Nahuel Molina,50,2.450.000 €,Atletico Madrid
+65d2fc31f32d5d68e9caf292,true,21/11/1994,Saul,46,1.670.000 €,Atletico Madrid
+65d2fc32f32d5d68e9caf293,true,20/01/1995,Gimenez,38,1.030.000 €,Atletico Madrid
+65d2fc33f32d5d68e9caf294,true,08/01/1991,Savic,37,1.120.000 €,Atletico Madrid
+65d2fc34f32d5d68e9caf295,false,28/08/1989,Azpilicueta,32,550.000 €,Atletico Madrid
+65d2fc36f32d5d68e9caf296,true,21/01/1994,Reinildo Mandava,31,3.670.000 €,Atletico Madrid
+65d2fc37f32d5d68e9caf297,false,07/02/2005,Arthur Vermeeren,4,2.120.000 €,Atletico Madrid
+65d2fc38f32d5d68e9caf298,false,20/01/1998,Moldovan,0,340.000 €,Atletico Madrid
+65d2fc38f32d5d68e9caf299,false,02/11/1989,Vitolo,0,150.000 €,Atletico Madrid
+65d2fc38f32d5d68e9caf29a,true,12/11/1995,Lemar,-2,320.000 €,Atletico Madrid
